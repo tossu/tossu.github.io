@@ -2,7 +2,7 @@
   "name": "Kortepohjan pysäkit!",
   "short_name": "Pysäkit",
   "description": "Kortepohjan pysäkkien realiaikaiset tiedot.",
-  "start_url": "/",
+  "start_url": "/pysakit2.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#0f4a73",
