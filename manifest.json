@@ -3,6 +3,7 @@
   "short_name": "Pysäkit",
   "description": "Kortepohjan pysäkkien realiaikaiset tiedot.",
   "start_url": "/",
+  "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#0f4a73",
   "icons": [{
