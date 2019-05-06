@@ -1,0 +1,8 @@
+{
+  "name": "Pysäkit",
+  "short_name": "Pysäkit",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Kortepohjan pysäkit!",
+}
