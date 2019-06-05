@@ -16,7 +16,7 @@ h1 {
   color: #F6F6F6;
 }
 
-#list, #list > div { width: 100%; }
+#app, #list, #list > div { width: 100%; }
 
 #destination {
   width: 100%;
