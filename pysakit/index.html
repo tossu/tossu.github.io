@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+  <link rel="icon" href="icon-256.png" sizes="256x256" />
+  <link rel="manifest" href="manifest.json">
+  <title>Pysäkit</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    const apiURL = "https://api.digitransit.fi/routing/v1/routers/waltti/index/graphql/batch";
+    const query = "query StopRoute($id_0:String!,$startTime_1:Long!,$timeRange_2:Int!,$numberOfDepartures_3:Int!) {stop(id:$id_0) {id,...F2}} fragment F0 on Stoptime{realtimeDeparture,scheduledDeparture,realtimeArrival,scheduledArrival,realtime,serviceDay,stopHeadsign,trip {pattern {route {shortName,longName}}}} fragment F1 on Stop {stoptimes:stoptimesWithoutPatterns(startTime:$startTime_1,timeRange:$timeRange_2,numberOfDepartures:$numberOfDepartures_3,omitCanceled:false) {...F0}} fragment F2 on Stop {...F1}";
+
+    const TIETONIEKANTIE1 = "LINKKI:207525";
+    const YLIOPPILASKYLA1 = "LINKKI:207532";
+    const KESKUSTA6 = "LINKKI:207455";
+    const PRISMA1 = "LINKKI:207466";
+    const MATTILANNIEMI = "LINKKI:207644";
+
+    const ROUTES = [
+      {
+        "name": "Kortepohja -> Keskusta",
+        "stops": [TIETONIEKANTIE1, YLIOPPILASKYLA1]
+      },
+      {
+        "name": "Keskusta 6 -> Kortepohja",
+        "stops": [KESKUSTA6]
+      },
+      {
+        "name": "Prisma 1 -> Kortepohja",
+        "stops": [PRISMA1]
+      },
+      {
+        "name": "Mattilanniemi -> Kortepohja",
+        "stops": [MATTILANNIEMI]
+      }
+    ]
+
+    function epoch() {
+      return Math.round((new Date).getTime()/1000);
+    }
+
+    function graphqlQuery(id) {
+      return [{
+        "query": query,
+        "variables": {
+          "id_0": id,
+          "startTime_1": epoch(),
+          "timeRange_2":43200,
+          "numberOfDepartures_3":3
+        }}];
+    }
+
+    function fetchStop(id) {
+      return fetch(apiURL, {
+        method: "POST",
+        cache: "no-cache",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(graphqlQuery(id))
+      }).then(response => {
+        if(response.status !== 200) {
+          alert("Pysäkkitietojen haku epäonnistui!");
+        }
+        return response.json();
+      }).then(json => {
+        return json[0]['payload']['data']['stop']['stoptimes'];
+      });
+    }
+
+    async function fetchStops(stops) {
+      const stopTimes = await Promise.all(stops.map(stop => fetchStop(stop)));
+      const times = stopTimes.flat().map(stop => {
+        return {
+          "name": stop["trip"]["pattern"]["route"]["shortName"],
+          "destination": stop["stopHeadsign"],
+          "realtime": stop["realtime"],
+          "seconds": stop["realtimeArrival"]
+        }
+      });
+      times.sort((a,b) => a["seconds"] - b["seconds"]);
+      return times;
+    }
+
+    function pad(num, size) {
+        let s = num+"";
+        while (s.length < size) s = "0" + s;
+        return s;
+    }
+
+    function createBusIcon() {
+      const element = document.createElement("div");
+      element.setAttribute("class", "bus-icon");
+      return element;
+    }
+
+    function createTextElement(text, className=null) {
+      const textElement = document.createElement("span");
+      textElement.append(document.createTextNode(text));
+      if(className !== null) {
+        textElement.setAttribute("class", className);
+      }
+      return textElement;
+    }
+
+    function formatTime(seconds) {
+      const hours = Math.floor(seconds / 3600);
+      const minutes = Math.floor((seconds / 60) % 60);
+      return pad(hours,2) + ":" + pad(minutes,2);
+    }
+
+    function createTimeElement(seconds, realtime) {
+        const timeElement = document.createElement("div");
+        timeElement.setAttribute("class", "time");
+        const icon = document.createElement("div");
+        icon.setAttribute("class", realtime ? "pulse-icon" : "pulse-icon hidden");
+        const time  = formatTime(seconds);
+        const text = document.createElement("div");
+        text.append(document.createTextNode(time));
+        timeElement.append(icon);
+        timeElement.append(text);
+        return timeElement;
+    }
+
+    function createStop(stop) {
+      const stopElement = document.createElement("div");
+      stopElement.setAttribute("class", "stop");
+      stopElement.append(createTimeElement(stop["seconds"], stop["realtime"]));
+      stopElement.append(createBusIcon());
+      stopElement.append(createTextElement(stop["name"], "bus-name"));
+      stopElement.append(createTextElement(stop["destination"], "destination"));
+      return stopElement;
+    }
+
+    function createStopList(stops, header) {
+      const listElement = document.createElement("div");
+      const headerElement = document.createElement("h1");
+      headerElement.append(document.createTextNode(header));
+      listElement.append(headerElement);
+      stops.forEach(stop => listElement.append(createStop(stop)));
+      return listElement;
+    }
+
+    function routeSelected(e) {
+      const selectedIndex = e.target.value;
+      const selected = ROUTES[selectedIndex];
+      selectRoute(selected);
+    }
+
+    function selectRoute(route) {
+      fetchStops(route["stops"])
+        .then(list => {
+          const listElement = document.getElementById("list");
+          while(listElement.firstChild) {
+            listElement.removeChild(listElement.firstChild);
+          }
+          listElement.append(createStopList(list, route["name"]));
+        }
+      );
+    }
+
+    function createRouteSelector(routes, selectedCallback=null) {
+      const selector = document.createElement("select");
+      selector.setAttribute("id", "destination");
+      routes.forEach((destination, index) => {
+        const optionElement = document.createElement("option");
+        optionElement.setAttribute("value", index);
+        optionElement.append(document.createTextNode(destination["name"]));
+        selector.append(optionElement);
+      });
+      if(selectedCallback !== null) {
+        selector.addEventListener("change", selectedCallback);
+      }
+      return selector;
+    }
+
+    window.onload = () => {
+      const appElement = document.getElementById("app");
+      appElement.append(createRouteSelector(ROUTES, routeSelected));
+
+      const appList = document.createElement("div");
+      appList.setAttribute("id", "list");
+      appElement.append(appList);
+
+      selectRoute(ROUTES[0]);
+    }
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>
