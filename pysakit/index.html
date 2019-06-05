@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="icon-256.png" sizes="256x256" />
   <link rel="manifest" href="manifest.json">
   <title>Pysäkit</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <script>
     const apiURL = "https://api.digitransit.fi/routing/v1/routers/waltti/index/graphql/batch";
     const query = "query StopRoute($id_0:String!,$startTime_1:Long!,$timeRange_2:Int!,$numberOfDepartures_3:Int!) {stop(id:$id_0) {id,...F2}} fragment F0 on Stoptime{realtimeDeparture,scheduledDeparture,realtimeArrival,scheduledArrival,realtime,serviceDay,stopHeadsign,trip {pattern {route {shortName,longName}}}} fragment F1 on Stop {stoptimes:stoptimesWithoutPatterns(startTime:$startTime_1,timeRange:$timeRange_2,numberOfDepartures:$numberOfDepartures_3,omitCanceled:false) {...F0}} fragment F2 on Stop {...F1}";
@@ -135,9 +135,6 @@
 
     function createStopList(stops, header) {
       const listElement = document.createElement("div");
-      const headerElement = document.createElement("h1");
-      headerElement.append(document.createTextNode(header));
-      listElement.append(headerElement);
       stops.forEach(stop => listElement.append(createStop(stop)));
       return listElement;
     }
@@ -155,7 +152,7 @@
           while(listElement.firstChild) {
             listElement.removeChild(listElement.firstChild);
           }
-          listElement.append(createStopList(list, route["name"]));
+          listElement.append(createStopList(list));
         }
       );
     }

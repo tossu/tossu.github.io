@@ -23,6 +23,8 @@ h1 {
   width: 100%;
   float: left;
   height: 100px;
+  text-align-last:center;
+  font-size: 110%;
 }
 
 #routeSelector:disabled {
