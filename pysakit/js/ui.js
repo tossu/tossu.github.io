@@ -1,3 +1,10 @@
+function createLoadingElement() {
+  const element = document.createElement("div");
+  element.setAttribute("id", "loading");
+  element.append(document.createTextNode("Loading.."));
+  return element;
+}
+
 function createBusIcon() {
   const element = document.createElement("div");
   element.setAttribute("class", "bus-icon");

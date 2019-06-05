@@ -30,9 +30,14 @@ function routeSelected(e) {
 }
 
 function selectRoute(route) {
+  const listElement = document.getElementById("list");
+  while(listElement.firstChild) {
+    listElement.removeChild(listElement.firstChild);
+  }
+  listElement.append(createLoadingElement());
+
   fetchStops(route["stops"])
     .then(list => {
-      const listElement = document.getElementById("list");
       while(listElement.firstChild) {
         listElement.removeChild(listElement.firstChild);
       }
