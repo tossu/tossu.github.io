@@ -22,7 +22,7 @@ function fetchStop(id) {
     body: JSON.stringify(graphqlQuery(id))
   }).then(response => {
     if(response.status !== 200) {
-      alert("Pysäkkitietojen haku epäonnistui!");
+      return null;
     }
     return response.json();
   }).then(json => {
@@ -32,6 +32,10 @@ function fetchStop(id) {
 
 async function fetchStops(stops) {
   const stopTimes = await Promise.all(stops.map(stop => fetchStop(stop)));
+  if (stopTimes === null) {
+    alert("Pysäkkitietojen haku epäonnistui!");
+    return [];
+  }
   const times = stopTimes.flat().map(stop => {
     return {
       "name": stop["trip"]["pattern"]["route"]["shortName"],
