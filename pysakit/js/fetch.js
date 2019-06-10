@@ -8,7 +8,7 @@ function graphqlQuery(id) {
       "id_0": id,
       "startTime_1": epoch(),
       "timeRange_2":43200,
-      "numberOfDepartures_3":3
+      "numberOfDepartures_3":5
     }}];
 }
 
