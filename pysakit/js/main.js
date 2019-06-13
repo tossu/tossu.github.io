@@ -26,6 +26,7 @@ const ROUTES = [
 function routeSelected(e) {
   const selectedIndex = e.target.value;
   const selected = ROUTES[selectedIndex];
+  localStorage.setItem("destinationIndex", selectedIndex);
   selectRoute(selected);
 }
 
@@ -47,12 +48,14 @@ function selectRoute(route) {
 }
 
 window.onload = () => {
+  const selectedIndex = parseInt(localStorage.getItem("destinationIndex")) || 0;
+
   const appElement = document.getElementById("app");
-  appElement.append(createRouteSelector(ROUTES, routeSelected));
+  appElement.append(createRouteSelector(ROUTES, selectedIndex, routeSelected));
 
   const appList = document.createElement("div");
   appList.setAttribute("id", "list");
   appElement.append(appList);
 
-  selectRoute(ROUTES[0]);
+  selectRoute(ROUTES[selectedIndex]);
 }

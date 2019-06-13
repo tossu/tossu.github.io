@@ -49,12 +49,15 @@ function createStopList(stops, header) {
   return listElement;
 }
 
-function createRouteSelector(routes, selectedCallback=null) {
+function createRouteSelector(routes, selectedIndex, selectedCallback=null) {
   const selector = document.createElement("select");
   selector.setAttribute("id", "destination");
   routes.forEach((destination, index) => {
     const optionElement = document.createElement("option");
     optionElement.setAttribute("value", index);
+    if(selectedIndex === index) {
+      optionElement.setAttribute("selected", true);
+    }
     optionElement.append(document.createTextNode(destination["name"]));
     selector.append(optionElement);
   });
