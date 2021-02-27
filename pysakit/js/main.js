@@ -3,8 +3,13 @@ const YLIOPPILASKYLA1 = "LINKKI:207532";
 const KESKUSTA6 = "LINKKI:207455";
 const PRISMA1 = "LINKKI:207466";
 const MATTILANNIEMI = "LINKKI:207644";
+const SCHAUMANIN_LINNA1 = "LINKKI:207693";
 
 const ROUTES = [
+  {
+    "name": "Schaumanin linna 1",
+    "stops": [SCHAUMANIN_LINNA1]
+  },
   {
     "name": "Kortepohja",
     "stops": [TIETONIEKANTIE1, YLIOPPILASKYLA1]
