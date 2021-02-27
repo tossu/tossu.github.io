@@ -7,10 +7,6 @@ const SCHAUMANIN_LINNA1 = "LINKKI:207693";
 
 const ROUTES = [
   {
-    "name": "Schaumanin linna 1",
-    "stops": [SCHAUMANIN_LINNA1]
-  },
-  {
     "name": "Kortepohja",
     "stops": [TIETONIEKANTIE1, YLIOPPILASKYLA1]
   },
@@ -23,16 +19,14 @@ const ROUTES = [
     "stops": [PRISMA1]
   },
   {
+    "name": "Schaumanin linna 1",
+    "stops": [SCHAUMANIN_LINNA1]
+  },
+  {
     "name": "Mattilanniemi",
     "stops": [MATTILANNIEMI]
   }
 ]
-
-function removeChildren(element) {
-  while(element.firstChild) {
-    element.removeChild(element.firstChild);
-  }
-}
 
 function routeSelected(e) {
   const selectedIndex = e.target.value;

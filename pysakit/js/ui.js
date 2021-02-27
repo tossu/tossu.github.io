@@ -6,7 +6,7 @@ function createLoadingElement() {
 }
 
 function createTextElement(text=null, className=null) {
-  const textElement = document.createElement("span");
+  const textElement = document.createElement("div");
   if (text != null) {
     textElement.append(document.createTextNode(text));
   }
@@ -26,10 +26,11 @@ function createStop(stop) {
   stopElement.append(createTextElement(null, "bus-icon"));
   stopElement.append(createTextElement(stop.name, "bus-name"));
   stopElement.append(createTextElement(stop.destination, "destination"));
+
   return stopElement;
 }
 
-function createStopList(stops, header) {
+function createStopList(stops) {
   const listElement = document.createElement("div");
   stops.forEach(stop => listElement.append(createStop(stop)));
   return listElement;

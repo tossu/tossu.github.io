@@ -37,12 +37,14 @@ async function fetchStops(stops) {
     return [];
   }
   const times = stopTimes.flat().map(stop => {
+    const realtimeArrival = new Date((stop.serviceDay + stop.realtimeArrival) * 1000);
+    const scheduledDeparture = new Date((stop.serviceDay + stop.scheduledDeparture) * 1000);
     return {
       "name": stop["trip"]["pattern"]["route"]["shortName"],
       "destination": stop["stopHeadsign"],
       "isRealtime": stop["realtime"],
-      "arrival": stop["realtimeArrival"],
-      "departure": stop["scheduledDeparture"]
+      "arrival": realtimeArrival,
+      "departure": scheduledDeparture,
     }
   });
   times.sort((a,b) => a.arrival - b.arrival);
