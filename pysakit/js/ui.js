@@ -18,7 +18,7 @@ function createStop(stop) {
     createTextElement(null, "bus-icon"),
     createTextElement(stop.name, "bus-name"),
     createTextElement(stop.destination, "destination")
-  ]
+  ];
   elements.forEach(element => stopElement.append(element));
   return stopElement;
 }
@@ -33,10 +33,10 @@ function createOptionElement(text, value, selected) {
   return optionElement;
 }
 
-function createLocationSelector(locations, selectedIndex, selectedCallback=null) {
+function createSelector(options, selectedIndex, selectedCallback=null) {
   const selector = document.createElement("select");
-  locations.forEach(({ name }, index) => {
-    selector.append(createOptionElement(name, index, (selectedIndex === index)));
+  options.forEach((option, index) => {
+    selector.append(createOptionElement(option, index, (selectedIndex === index)));
   });
   if(selectedCallback !== null) {
     selector.addEventListener("change", selectedCallback);

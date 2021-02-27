@@ -46,9 +46,10 @@ async function showLocation(route) {
 
 window.onload = () => {
   const selectedLocationIndex = parseInt(localStorage.getItem("destinationIndex")) || 0;
+  const locationNames = LOCATIONS.map(l => l.name);
 
   const appElement = document.getElementById("app");
-  appElement.append(createLocationSelector(LOCATIONS, selectedLocationIndex, locationSelected));
+  appElement.append(createSelector(locationNames, selectedLocationIndex, locationSelected));
   const appList = document.createElement("div");
   appList.setAttribute("id", "list");
   appElement.append(appList);
