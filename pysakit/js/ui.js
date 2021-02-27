@@ -5,41 +5,27 @@ function createLoadingElement() {
   return element;
 }
 
-function createBusIcon() {
-  const element = document.createElement("div");
-  element.setAttribute("class", "bus-icon");
-  return element;
-}
-
-function createTextElement(text, className=null) {
+function createTextElement(text=null, className=null) {
   const textElement = document.createElement("span");
-  textElement.append(document.createTextNode(text));
-  if(className !== null) {
+  if (text != null) {
+    textElement.append(document.createTextNode(text));
+  }
+  if(className != null) {
     textElement.setAttribute("class", className);
   }
   return textElement;
 }
 
-function createTimeElement(seconds, realtime) {
-    const timeElement = document.createElement("div");
-    timeElement.setAttribute("class", "time");
-    const icon = document.createElement("div");
-    icon.setAttribute("class", realtime ? "pulse-icon" : "pulse-icon hidden");
-    const time  = formatTime(seconds);
-    const text = document.createElement("div");
-    text.append(document.createTextNode(time));
-    timeElement.append(icon);
-    timeElement.append(text);
-    return timeElement;
-}
-
 function createStop(stop) {
   const stopElement = document.createElement("div");
   stopElement.setAttribute("class", "stop");
-  stopElement.append(createTimeElement(stop["seconds"], stop["realtime"]));
-  stopElement.append(createBusIcon());
-  stopElement.append(createTextElement(stop["name"], "bus-name"));
-  stopElement.append(createTextElement(stop["destination"], "destination"));
+
+  stopElement.append(createTextElement(null, (stop.isRealtime ? "realtime-icon" : "realtime-icon hidden")));
+  stopElement.append(createTextElement(formatTime(stop.arrival), "arrival-time"));
+  stopElement.append(createTextElement(formatTime(stop.departure), "departure-time"));
+  stopElement.append(createTextElement(null, "bus-icon"));
+  stopElement.append(createTextElement(stop.name, "bus-name"));
+  stopElement.append(createTextElement(stop.destination, "destination"));
   return stopElement;
 }
 

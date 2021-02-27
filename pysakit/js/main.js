@@ -23,6 +23,12 @@ const ROUTES = [
   }
 ]
 
+function removeChildren(element) {
+  while(element.firstChild) {
+    element.removeChild(element.firstChild);
+  }
+}
+
 function routeSelected(e) {
   const selectedIndex = e.target.value;
   const selected = ROUTES[selectedIndex];
@@ -32,16 +38,12 @@ function routeSelected(e) {
 
 function selectRoute(route) {
   const listElement = document.getElementById("list");
-  while(listElement.firstChild) {
-    listElement.removeChild(listElement.firstChild);
-  }
+  removeChildren(listElement);
   listElement.append(createLoadingElement());
 
   fetchStops(route["stops"])
     .then(list => {
-      while(listElement.firstChild) {
-        listElement.removeChild(listElement.firstChild);
-      }
+      removeChildren(listElement);
       listElement.append(createStopList(list));
     }
   );

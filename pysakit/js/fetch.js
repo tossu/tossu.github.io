@@ -40,10 +40,11 @@ async function fetchStops(stops) {
     return {
       "name": stop["trip"]["pattern"]["route"]["shortName"],
       "destination": stop["stopHeadsign"],
-      "realtime": stop["realtime"],
-      "seconds": stop["realtimeArrival"]
+      "isRealtime": stop["realtime"],
+      "arrival": stop["realtimeArrival"],
+      "departure": stop["scheduledDeparture"]
     }
   });
-  times.sort((a,b) => a["seconds"] - b["seconds"]);
+  times.sort((a,b) => a.arrival - b.arrival);
   return times;
 }
