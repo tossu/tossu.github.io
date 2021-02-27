@@ -1,30 +1,23 @@
-function createLoadingElement() {
-  return createElement({ id: "loading", text: "LOADING" });
-}
-
-function createElement({ type, text, className, id }) {
-  const element = document.createElement(type || "div");
-  if (text != null) {
-    element.append(document.createTextNode(text));
-  }
-  if (className != null) {
-    element.setAttribute("class", className);
-  }
-  if (id != null) {
-    element.setAttribute("id", id);
-  }
+function createTextElement(text, className) {
+  const element = document.createElement("div");
+  element.append(document.createTextNode(text || ""));
+  element.setAttribute("class", className || "");
   return element;
 }
 
+function createLoadingElement() {
+  return createTextElement("LOADING", "loading");
+}
+
 function createStop(stop) {
-  const stopElement = createElement({ className: "stop" });
+  const stopElement = createTextElement(null, "stop");
   const elements = [
-    createElement({ className: (stop.isRealtime ? "realtime-icon" : "realtime-icon hidden") }),
-    createElement({ className: "arrival-time", text: formatTime(stop.arrival) }),
-    createElement({ className: "departure-time", text: formatTime(stop.departure) }),
-    createElement({ className: "bus-icon" }),
-    createElement({ className: "bus-name", text: stop.name }),
-    createElement({ className: "destination", text: stop.destination })
+    createTextElement(null, (stop.isRealtime ? "realtime-icon" : "realtime-icon hidden")),
+    createTextElement(formatTime(stop.arrival), "arrival-time"),
+    createTextElement(formatTime(stop.departure), "departure-time"),
+    createTextElement(null, "bus-icon"),
+    createTextElement(stop.name, "bus-name"),
+    createTextElement(stop.destination, "destination")
   ]
   elements.forEach(element => stopElement.append(element));
   return stopElement;
@@ -41,7 +34,7 @@ function createOptionElement(text, value, selected) {
 }
 
 function createLocationSelector(locations, selectedIndex, selectedCallback=null) {
-  const selector = createElement({ type: "select", id: "location" });
+  const selector = document.createElement("select");
   locations.forEach(({ name }, index) => {
     selector.append(createOptionElement(name, index, (selectedIndex === index)));
   });
