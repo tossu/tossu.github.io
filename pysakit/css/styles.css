@@ -36,9 +36,10 @@ select {
   float: left;
   height: 70px;
   font-size: 1.5em;
-  text-align-last:center;
   background-color: #373B44;
   color: white;
+  padding: 0.5em;
+  border-radius: 0;
 }
 
 #loading {
