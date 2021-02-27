@@ -3,7 +3,9 @@ function epoch() {
 }
 
 function formatTime(date) {
-  return date.toLocaleTimeString("fi-FI",{ hour:"2-digit", minute: "2-digit"});
+  const hours = date.getHours().toString().padStart(2, "0");
+  const minutes = date.getMinutes().toString().padStart(2, "0");
+  return hours + ":" + minutes;
 }
 
 function removeChildren(element) {
