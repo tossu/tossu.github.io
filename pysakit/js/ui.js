@@ -5,10 +5,6 @@ function createTextElement(text, className) {
   return element;
 }
 
-function createLoadingElement() {
-  return createTextElement("LOADING", "loading");
-}
-
 function createStop(stop) {
   const stopElement = createTextElement(null, "stop");
   const elements = [
@@ -33,7 +29,7 @@ function createOptionElement(text, value, selected) {
   return optionElement;
 }
 
-function createSelector(options, selectedIndex, selectedCallback=null) {
+function createSelectElement(options, selectedIndex, selectedCallback=null) {
   const selector = document.createElement("select");
   options.forEach((option, index) => {
     selector.append(createOptionElement(option, index, (selectedIndex === index)));

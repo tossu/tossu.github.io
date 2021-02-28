@@ -5,6 +5,8 @@ const PRISMA1 = "LINKKI:207466";
 const MATTILANNIEMI = "LINKKI:207644";
 const SCHAUMANIN_LINNA1 = "LINKKI:207693";
 
+const LOCATION_STORAGE_KEY = "locationIndex";
+
 const LOCATIONS = [
   {
     "name": "Kortepohja",
@@ -26,33 +28,36 @@ const LOCATIONS = [
     "name": "Mattilanniemi",
     "stops": [MATTILANNIEMI]
   }
-]
+];
+
+const LOCATION_NAMES = LOCATIONS.map(x => x.name);
 
 function locationSelected(e) {
   const selectedLocationIndex = e.target.value;
   const selectedLocation = LOCATIONS[selectedLocationIndex];
-  localStorage.setItem("destinationIndex", selectedLocationIndex);
+  localStorage.setItem(LOCATION_STORAGE_KEY, selectedLocationIndex);
   showLocation(selectedLocation);
 }
 
 async function showLocation(route) {
   const listElement = document.getElementById("list");
   removeChildren(listElement);
-  listElement.append(createLoadingElement());
   const stops = await fetchStops(route.stops);
-  removeChildren(listElement);
   stops.forEach(stop => listElement.append(createStop(stop)));
 }
 
 window.onload = () => {
-  const selectedLocationIndex = parseInt(localStorage.getItem("destinationIndex")) || 0;
-  const locationNames = LOCATIONS.map(l => l.name);
+  const selectedLocationIndex = parseInt(localStorage.getItem(LOCATION_STORAGE_KEY)) || 0;
+  const selectedLocation = LOCATIONS[selectedLocationIndex];
 
-  const appElement = document.getElementById("app");
-  appElement.append(createSelector(locationNames, selectedLocationIndex, locationSelected));
-  const appList = document.createElement("div");
-  appList.setAttribute("id", "list");
-  appElement.append(appList);
+  const locationSelectElement = createSelectElement(LOCATION_NAMES, selectedLocationIndex, locationSelected);
 
-  showLocation(LOCATIONS[selectedLocationIndex]);
+  const listElement = document.createElement("div");
+  listElement.setAttribute("id", "list");
+
+  const app = document.getElementById("app");
+  app.append(locationSelectElement);
+  app.append(listElement);
+
+  showLocation(selectedLocation);
 }
