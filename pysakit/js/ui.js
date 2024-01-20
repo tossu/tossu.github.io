@@ -11,7 +11,6 @@ function createStop(stop) {
         createTextElement(null, (stop.isRealtime ? "realtime-icon" : "realtime-icon hidden")),
         createTextElement(formatTime(stop.arrival), "arrival-time"),
         createTextElement(formatTime(stop.departure), "departure-time"),
-        createTextElement(null, "bus-icon"),
         createTextElement(stop.name, "bus-name"),
         createTextElement(stop.destination, "destination")
     ];
