@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+      "target": "es2021",
+      "sourceMap": false,
+      "removeComments": true,
+      "outDir": "js",
+  }
+}

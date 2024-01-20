@@ -1,12 +1,15 @@
 import { formatTime } from './utils.js';
-function createTextElement(text, className) {
+import { Arrival } from './fetch.js';
+
+function createTextElement(text: string, className: string): HTMLDivElement {
     const element = document.createElement("div");
     element.append(document.createTextNode(text || ""));
     element.setAttribute("class", className || "");
     return element;
 }
-function createStop(stop) {
-    const stopElement = createTextElement(null, "stop");
+
+function createStop(stop: Arrival): HTMLDivElement {
+    const stopElement: HTMLDivElement = createTextElement(null, "stop");
     const elements = [
         createTextElement(null, (stop.isRealtime ? "realtime-icon" : "realtime-icon hidden")),
         createTextElement(formatTime(stop.arrival), "arrival-time"),
@@ -18,8 +21,9 @@ function createStop(stop) {
     elements.forEach(element => stopElement.append(element));
     return stopElement;
 }
-function createOptionElement(text, value, selected) {
-    const optionElement = document.createElement("option");
+
+function createOptionElement(text: string, value: number, selected: boolean): HTMLOptionElement {
+    const optionElement: HTMLOptionElement = document.createElement("option");
     optionElement.setAttribute("value", value + "");
     if (selected) {
         optionElement.setAttribute("selected", "true");
@@ -27,9 +31,10 @@ function createOptionElement(text, value, selected) {
     optionElement.append(document.createTextNode(text));
     return optionElement;
 }
-function createSelectElement(options, selectedIndex, selectedCallback = null) {
-    const selector = document.createElement("select");
-    options.forEach((option, index) => {
+
+function createSelectElement(options: string[], selectedIndex: number, selectedCallback: (e: Event) => void = null): HTMLSelectElement {
+    const selector: HTMLSelectElement = document.createElement("select");
+    options.forEach((option: string, index: number) => {
         selector.append(createOptionElement(option, index, (selectedIndex === index)));
     });
     if (selectedCallback !== null) {
@@ -37,4 +42,5 @@ function createSelectElement(options, selectedIndex, selectedCallback = null) {
     }
     return selector;
 }
+
 export { createTextElement, createStop, createOptionElement, createSelectElement };
