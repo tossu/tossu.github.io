@@ -8,24 +8,11 @@ function createTextElement(text: string, className: string): HTMLDivElement {
     return element;
 }
 
-function arrivalTimeClass(isRealtime: boolean, arrival: Date, departure: Date): string {
-    // if arrival or departune are different then is is realtime
-    if (arrival < departure) {
-        return "arrival-time realtime early";
-    }
-    if (departure < arrival) {
-        return "arrival-time realtime late";
-    }
-    if (isRealtime) {
-        return "arrival-time realtime";
-    }
-    return "arrival-time";
-}
-
 function createStop(stop: Arrival): HTMLDivElement {
     const stopElement: HTMLDivElement = createTextElement(null, "stop");
     const elements = [
-        createTextElement(formatTime(stop.arrival), arrivalTimeClass(stop.isRealtime, stop.arrival, stop.departure)),
+        createTextElement("", stop.isRealtime ? "realtime-icon realtime" : "realtime-icon hidden"),
+        createTextElement(formatTime(stop.arrival), "arrival-time"),
         createTextElement(formatTime(stop.departure), "departure-time"),
         createTextElement(stop.name, "bus-name"),
         createTextElement(stop.destination, "destination")

@@ -5,22 +5,11 @@ function createTextElement(text, className) {
     element.setAttribute("class", className || "");
     return element;
 }
-function arrivalTimeClass(isRealtime, arrival, departure) {
-    if (arrival < departure) {
-        return "arrival-time realtime early";
-    }
-    if (departure < arrival) {
-        return "arrival-time realtime late";
-    }
-    if (isRealtime) {
-        return "arrival-time realtime";
-    }
-    return "arrival-time";
-}
 function createStop(stop) {
     const stopElement = createTextElement(null, "stop");
     const elements = [
-        createTextElement(formatTime(stop.arrival), arrivalTimeClass(stop.isRealtime, stop.arrival, stop.departure)),
+        createTextElement("", stop.isRealtime ? "realtime-icon realtime" : "realtime-icon hidden"),
+        createTextElement(formatTime(stop.arrival), "arrival-time"),
         createTextElement(formatTime(stop.departure), "departure-time"),
         createTextElement(stop.name, "bus-name"),
         createTextElement(stop.destination, "destination")
