@@ -57,6 +57,11 @@ ul>li {
     margin-bottom: 2rem;
 }
 
+#toc {
+    display: flex;
+    justify-content: space-between;
+}
+
 .example {
     padding: 1em;
     background-color: #f7f7f7;
@@ -66,5 +71,11 @@ ul>li {
     #container {
         width: 40%;
         margin-left: 30%;
+    }
+
+    #toc {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
     }
 }
