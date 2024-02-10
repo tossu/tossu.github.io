@@ -25,7 +25,6 @@ h2, h3 {
 h2>a, h3>a {
     color: #212427;
     text-decoration: none;
-    border-style: none;
     border-width: 0;
 }
 
