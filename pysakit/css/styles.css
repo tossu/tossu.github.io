@@ -8,8 +8,7 @@ body {
 
 select {
   /* removes the arrow */
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none;
   text-indent: 1px;
   text-overflow: '';
 
@@ -49,14 +48,6 @@ select > option {
   background-color: #DEE1B6;
 }
 
-.realtime-icon {
-  margin: 1em;
-  margin-right: 0.25em;
-  width: 14px;
-  height: 14px;
-  background: url('data:image/svg+xml;utf8,<svg style="fill: rgb(0,102,43);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path class="pulse1" d="M368.356 1024.014c-44.781 0-81.079-36.302-81.079-81.079 0-361.528 294.123-655.658 655.651-655.658 44.781 0 81.079 36.302 81.079 81.079s-36.298 81.079-81.079 81.079c-272.112 0-493.497 221.385-493.497 493.5 0.004 44.773-36.295 81.079-81.075 81.079z"></path><path class="pulse2" d="M81.072 1024.014c-44.781 0-81.079-36.302-81.079-81.079 0-519.948 423.002-942.946 942.939-942.946 44.781 0 81.079 36.302 81.079 81.079s-36.298 81.079-81.079 81.079c-430.524 0-780.781 350.257-780.781 780.788 0 44.773-36.298 81.079-81.079 81.079z"></path></svg>');
-}
-
 .destination {
   float: right;
   text-transform: uppercase;
@@ -76,9 +67,13 @@ select > option {
   text-align: center;
 }
 
+.arrival-time, .departure-time {
+  width: 12%;
+  padding: 1em;
+}
+
 .arrival-time {
-  padding-left: 0.5em;
-  padding-right: 0;
+  padding-right: 0.25em;
 }
 
 .departure-time {
@@ -86,8 +81,14 @@ select > option {
   color: #72884A;
 }
 
+.early {
+  color: green;
+}
+
+.late {
+  color: red;
+}
+
 @keyframes blink { 0% {opacity: 0} 49%{opacity: 0} 50% {opacity: 1}}
 
-.realtime-icon {animation: blink 1s infinite;}
-
-.realtime-icon.hidden { background: none; }
+.realtime {animation: blink 1s infinite;}

@@ -59,7 +59,7 @@ async function fetchStop(stopId: number) {
 }
 
 function cleanDestination(name: string): string {
-    if (name === "Jyväskylä Keskusta") {
+    if (name === "JYVÄSKYLÄ KESKUSTA") {
         return "Keskusta";
     }
     if (name === "Keskussairaala Nova") {

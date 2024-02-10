@@ -38,7 +38,7 @@ async function fetchStop(stopId) {
     }
 }
 function cleanDestination(name) {
-    if (name === "Jyväskylä Keskusta") {
+    if (name === "JYVÄSKYLÄ KESKUSTA") {
         return "Keskusta";
     }
     if (name === "Keskussairaala Nova") {
