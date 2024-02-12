@@ -26,10 +26,7 @@ h2>a, h3>a {
     color: #212427;
     text-decoration: none;
     border-width: 0;
-}
-
-h2>a:hover, h3>a:hover {
-    border-width: 0;
+    outline: 0;
 }
 
 #container {
