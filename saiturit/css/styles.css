@@ -28,6 +28,10 @@ h2>a, h3>a {
     border-width: 0;
 }
 
+h2>a:hover, h3>a:hover {
+    border-width: 0;
+}
+
 #container {
     padding: 1em;
     padding-bottom: 0;
