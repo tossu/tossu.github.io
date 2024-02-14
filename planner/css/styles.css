@@ -1,0 +1,36 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+.chart {
+    width: 100%;
+    float: left;
+}
+
+.chart>div.category {
+
+}
+
+.chart>div.category>div.bar {
+    width: calc(100% - 2em);
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.chart>div.category>div.label {
+    float: left;
+    width: 100%;
+    padding: 1em;
+    padding-bottom: 0.5em;
+}

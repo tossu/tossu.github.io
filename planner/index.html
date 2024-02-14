@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/styles.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-
 
     <script src="scripts/main.js"></script>
 
@@ -23,11 +20,58 @@
 
 <body>
 
+    <!-- Isoin luku on 500 -->
 
-    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
-        <canvas id="chart"></canvas>
+
+    <!-- 
+        
+        Halutaan seurata budjetin kehitystä
+        - Paljonko budjettia jäljellä
+        - Kuinka paljon on käytetty
+        - Kuinka paljon ollaan menty budjetista ylitse
+
+    -->
+
+    <div class="chart">
+
+
+        <div class="category">
+
+            <div class="label">
+                Terveys
+            </div>
+
+            <div class="bar">
+                <div style="width: calc(100%); background-color: pinK; float: left; padding: 0.5em;">500</div>
+                <div style="position: fixed; right: 0; padding: 0.5em;">Budjetoitu</div>
+            </div>
+            <div class="bar">
+                <div style="width: calc(100% - (100% - 50%)); background-color: #f3f3f3; float: left; padding: 0.5em;">250</div>
+                <div style="position: fixed; right: 0; padding: 0.5em;">Käytetty</div>
+            </div>
+
+        </div>
+
+
+        <div class="category">
+
+            <div class="label">
+                Ruoka
+            </div>
+
+            <div class="bar">
+                <div style="width: calc(100% - (100% - 40%)); background-color: pinK; float: left; padding: 0.5em;">200</div>
+                <div style="position: fixed; right: 0; padding: 0.5em;">Budjetoitu</div>
+            </div>
+            <div class="bar">
+                <div style="width: calc(100% - (100% - 30%)); background-color: #f3f3f3; float: left; padding: 0.5em;">150</div>
+                <div style="position: fixed; right: 0; padding: 0.5em;">Käytetty</div>
+            </div>
+
+        </div>
+
+
     </div>
-    
 
 </body>
 
