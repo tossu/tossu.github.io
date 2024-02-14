@@ -40,6 +40,11 @@ function init() {
             backgroundColor: "#f3f3f3",
             barThickness: 20,
         },
+        {
+            data: [250, 100, 0, 10],
+            backgroundColor: "pink",
+            barThickness: 20,
+        },
     ];
 
     const chart = new Chart(ctx, {
@@ -55,18 +60,10 @@ function init() {
                     borderWidth: 0,
                 }
             },
-
             responsive: true,
             plugins: {
                 legend: {
-                    position: 'bottom',
                     display: false,
-                    labels: {
-                        // This more specific font property overrides the global property
-                        font: {
-                            size: 20
-                        }
-                    }
                 },
                 title: {
                     display: false
