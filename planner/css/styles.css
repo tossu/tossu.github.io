@@ -36,3 +36,7 @@ div.category>div.bar {
 h3 {
     padding: 0.5em;
 }
+
+div.bar>div:nth-child(2) {
+    color: #cecece;
+}
