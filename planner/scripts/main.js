@@ -36,11 +36,13 @@ function init() {
 
     const data = [
         {
+            label: "Budjetoitu",
             data: [250, 100, 0, 10],
             backgroundColor: "#f3f3f3",
             barThickness: 20,
         },
         {
+            label: "Toteutunut",
             data: [250, 100, 0, 10],
             backgroundColor: "pink",
             barThickness: 20,
@@ -63,7 +65,7 @@ function init() {
             responsive: true,
             plugins: {
                 legend: {
-                    display: false,
+                    display: true,
                 },
                 title: {
                     display: false
