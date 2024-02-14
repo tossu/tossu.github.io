@@ -1,6 +1,29 @@
 
 
 
+function getMonth() {
+    const months = [
+        "Tammikuu",
+        "Helmikuu",
+        "Maaliskuu",
+        "Huhtikuu",
+        "Toukokuu",
+        "Kesäkuu",
+        "Heinäkuu",
+        "Elokuu",
+        "Syyskuu",
+        "Lokakuu",
+        "Marraskuu",
+        "Joulukuu"
+    ]
+    const now = new Date();
+    const month = now.getMonth();
+    return months[month];
+}
+
+window.kuukausi = getMonth;
+
+
 function seppoTaalasmaa() {
 
     const planned = {

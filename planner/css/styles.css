@@ -6,6 +6,25 @@
     color: #212427;
 }
 
+#modal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background: rgba(231, 173, 173, 0.5);
+}
+
+#modal > div {
+    background-color: white;
+    width: calc(80% - 2em);
+    margin-left: 10%;
+    margin-top: 10%;
+
+    padding: 1em;
+}
+
 div.category>div.bar {
     display: flex;
     justify-content: space-between;
