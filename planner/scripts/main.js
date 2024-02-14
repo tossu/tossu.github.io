@@ -32,43 +32,53 @@ function init() {
     }
 
 
-    const ctx = document.getElementById('myChart');
+    const ctx = document.getElementById('chart');
 
-    const data = [
+    const data = {
+        labels: ["Ruoka", "Terveys", "Ravintola", "Sähkö"],
+        datasets: [
         {
             label: "Budjetoitu",
             data: [250, 100, 0, 10],
             backgroundColor: "#f3f3f3",
-            barThickness: 20,
+            // barThickness: 20,
         },
         {
             label: "Toteutunut",
             data: [250, 100, 0, 10],
             backgroundColor: "pink",
-            barThickness: 20,
+            //barThickness: 20,
         },
-    ];
+    ]
+    }
 
     const chart = new Chart(ctx, {
         type: 'bar',
-        data: {
-            labels: ["Ruoka", "Terveys", "Ravintola", "Sähkö"],
-            datasets: data,
-        },
+        data: data,
         options: {
+
             indexAxis: 'y',
+            
+
+            animation: false,
+
             elements: {
                 bar: {
                     borderWidth: 0,
                 }
             },
+
             responsive: true,
+
             plugins: {
                 legend: {
                     display: true,
                 },
                 title: {
                     display: false
+                },
+                tooltip: {
+                    enabled: false
                 },
                 datalabels: {
                     display: function (context) {
@@ -84,23 +94,26 @@ function init() {
                     }
                 },
             },
+            
             scales: {
                 x: {
-                    stacked: false,
                     grid: {
                         display:false,
-                        drawBorder: false
                     },
                     ticks: {
-                        display: false
-                    }
+                        display: false,
+                    },
                 },
                 y: {
-                    stacked: false,
                     grid: {
-                        display:false,
-                        drawBorder: false
-                    }   
+                        display:false
+                    },
+                    ticks: {
+                        font: {
+                            size: "16px",
+                            family: "Verdana,sans-serif",
+                        },
+                    }
                 }
             }
         },
