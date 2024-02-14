@@ -15,22 +15,19 @@
     float: left;
 }
 
-.chart>div.category {
-
-}
 
 .chart>div.category>div.bar {
+    display: flex;
+    justify-content: space-between;
+    
     width: calc(100% - 2em);
-    float: left;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0.5em;
+    margin: 0.5em;
+    background: linear-gradient(90deg, var(--color) var(--percentage), #fff var(--percentage));
 }
 
 .chart>div.category>div.label {
     float: left;
-    width: 100%;
-    padding: 1em;
-    padding-bottom: 0.5em;
+    width: calc(100% - 1em);
+    padding: 0.5em;
 }
