@@ -26,8 +26,7 @@
 
     <div class="d-flex flex-column">
         <div class="d-flex flex-column">
-            <div class="d-flex justify-content-between p-1"
-                onclick="javascript:expandToggle(this)">
+            <div class="d-flex justify-content-between p-1" onclick="javascript:expandToggle(this)">
                 <div>
                     Ruoka
                 </div>
@@ -37,11 +36,14 @@
             </div>
             <div class="expand hidden p-1" style="background-color: #f3f3f3;">
                 <form onsubmit="javascript:event.preventDefault();">
-                    <label>Nimi</label>
-                    <input type="text" pattern="[A-ZÄÖÅa-zäöå0-9]+" required value="Ruoka" />
-                    <label>Budjetoitu kulu</label>
-                    <input type="number" min=0 id="price" step=".01" required value="200" />
-
+                    <div class="d-flex flex-column">
+                        <label>Nimi</label>
+                        <input type="text" pattern="[A-ZÄÖÅa-zäöå0-9]+" required value="Ruoka" />
+                    </div>
+                    <div class="d-flex flex-column">
+                        <label>Budjetoitu kulu</label>
+                        <input type="number" min=0 id="price" step=".01" required value="200" />
+                    </div>
                     <div class="d-flex justify-content-between">
                         <button type="submit" class="button">Tallenna</button>
                         <button type="button" class="button" onclick="javascript:deleteCategory(this)">Poista</button>
@@ -50,8 +52,7 @@
             </div>
         </div>
         <div class="d-flex flex-column">
-            <div class="d-flex justify-content-between p-1"
-                onclick="javascript:expandToggle(this)">
+            <div class="d-flex justify-content-between p-1" onclick="javascript:expandToggle(this)">
                 <div>
                     Ravintola
                 </div>
