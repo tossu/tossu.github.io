@@ -23,6 +23,12 @@
     justify-content: end;
 }
 
+/* Utils */
+
+.hidden { 
+    display: none;
+}
+
 /* Chart / Bars */
 
 div.chart>div.category>div.bar {
@@ -67,6 +73,9 @@ div.chart>div.category>div.bar>div:nth-child(2) {
     right: 0;
     top: 0;
     bottom: 0;
+
+    height: 100%;
+    width: 100%;
 
     background-color: white;
 
