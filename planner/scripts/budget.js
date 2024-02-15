@@ -155,6 +155,6 @@ function init() {
 
 }
 
-window.onload = (event) => {
+window.addEventListener("load", (event) => {
     init();
-};
+});
