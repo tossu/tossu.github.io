@@ -26,6 +26,12 @@
 */
 
 
+:root {
+  --primary-color: pink;
+  --secondary-color: rgb(255, 157, 173);
+}
+
+
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* .container {
@@ -157,7 +163,7 @@
   /* Links
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   a {
-    color: #1EAEDB; }
+    color: var(--secondary-color); /* #1EAEDB; */ }
   a:hover {
     color: #0FA0CE; }
   
@@ -205,8 +211,8 @@
   input[type="reset"].button-primary,
   input[type="button"].button-primary {
     color: #FFF;
-    background-color: #33C3F0;
-    border-color: #33C3F0; }
+    background-color: var(--primary-color); /*  #33C3F0; */
+    border-color: var(--primary-color); /*  #33C3F0; */ }
   .button.button-primary:hover,
   button.button-primary:hover,
   input[type="submit"].button-primary:hover,
@@ -218,8 +224,8 @@
   input[type="reset"].button-primary:focus,
   input[type="button"].button-primary:focus {
     color: #FFF;
-    background-color: #1EAEDB;
-    border-color: #1EAEDB; }
+    background-color: var(--secondary-color);  /* #1EAEDB */
+    border-color: var(--secondary-color); /* #1EAEDB */ }
   
   
   /* Forms
@@ -265,7 +271,7 @@
   input[type="password"]:focus,
   textarea:focus,
   select:focus {
-    border: 1px solid #33C3F0;
+    border: 1px solid var(--primary-color); /*  #33C3F0; */
     outline: 0; }
   label,
   legend {

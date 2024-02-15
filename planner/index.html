@@ -31,36 +31,39 @@
         ja muut suhteutetaan sen mukaan.
     -->
 
-    <div id="modal">
-        <div>
+    <div id="modal" class="d-flex flex-column">
+        
+        <div class="d-flex justify-content-end">
+            X
+        </div>
 
-            <div class="d-flex flex-column">
-                <label for="category">Kategoria</label>
-                <select name="category" id="category">
-                    <option value="ruoka">Ruoka</option>
-                    <option value="terveys">Terveys</option>
-                    <option value="_new">Uusi kategoria</option>
-                </select>
-            </div>
+        <div class="d-flex flex-column">
+            <label for="category">Kategoria</label>
+            <select name="category" id="category">
+                <option value="ruoka">Ruoka</option>
+                <option value="terveys">Terveys</option>
+                <option value="_new">Uusi kategoria</option>
+            </select>
+        </div>
 
-            <div class="d-flex flex-column">
-                <label for="_new_category">Uuden kategorian nimi</label>
-                <input type="text" id="_new_category" />
-            </div>
+        <div class="d-flex flex-column">
+            <label for="_new_category">Uuden kategorian nimi</label>
+            <input type="text" id="_new_category" />
+        </div>
 
-            <div class="d-flex flex-column">
-                <label for="price">Hinta</label>
-                <input type="text" id="price" />
-            </div>
+        <div class="d-flex flex-column">
+            <label for="price">Hinta</label>
+            <input type="text" id="price" />
+        </div>
 
-            <div class="d-flex flex-column">
-                <label for="description">Selite</label>
-                <textarea id="description"></textarea>
-            </div>
+        <div class="d-flex flex-column">
+            <label for="description">Selite</label>
+            <textarea id="description"></textarea>
+        </div>
 
-            <div class="d-flex justify-content-end">
-                <button class="primary" type="button">Lisää</button>
-            </div>
+        <div class="d-flex justify-content-between">
+            <button class="primary" type="button">Peruuta</button>
+            <button class="button button-primary" type="button">Lisää</button>
         </div>
     </div>
 
