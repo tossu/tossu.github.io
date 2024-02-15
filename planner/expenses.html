@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="scripts/expenses.js"></script>
     <script src="scripts/utils.js"></script>
+    <script src="scripts/expenses.js"></script>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
 
     <div id="add-expense-modal" class="modal hidden d-flex flex-column">
 
-        <div class="d-flex justify-content-end" onClick="javascript:hideElement('add-expense-modal')">
+        <div class="d-flex justify-content-end" onclick="javascript:hideElement('add-expense-modal')">
             X
         </div>
 
@@ -38,7 +38,7 @@
 
             <div class="d-flex flex-column">
                 <label for="category">Kategoria</label>
-                <select id="category" name="category" onChange="onCategorySelected(this)" required>
+                <select id="category" name="category" onchange="onCategorySelected(this)" required>
                     <option value="ruoka">Ruoka</option>
                     <option value="terveys">Terveys</option>
                     <option value="_new">Uusi kategoria</option>
@@ -92,7 +92,7 @@
                 <form onsubmit="javascript:event.preventDefault();">
                     <div class="d-flex flex-column">
                         <label for="category">Kategoria</label>
-                        <select id="category" name="category" onChange="onCategorySelected(this)" required>
+                        <select id="category" name="category" onchange="onCategorySelected(this)" required>
                             <option value="ruoka">Ruoka</option>
                             <option value="terveys">Terveys</option>
                         </select>
