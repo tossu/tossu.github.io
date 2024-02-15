@@ -67,7 +67,7 @@ div.chart>div.category>div.bar>div:nth-child(2) {
 
 /* Modal */
 
-#modal {
+.modal {
     position: fixed;
     left: 0;
     right: 0;
@@ -79,8 +79,4 @@ div.chart>div.category>div.bar>div:nth-child(2) {
 
     background-color: white;
     padding: 1em;
-}
-
-.hidden input {
-    pointer-events:none;
 }

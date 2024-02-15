@@ -13,9 +13,9 @@
 
 <body>
 
-    <div id="modal" class="d-flex flex-column">
+    <div id="add-expense-modal" class="modal hidden d-flex flex-column">
 
-        <div class="d-flex justify-content-end">
+        <div class="d-flex justify-content-end" onClick="javascript:hideAddExpenseModal()">
             X
         </div>
 
@@ -32,12 +32,12 @@
 
             <div id="new-category-container" class="d-flex flex-column hidden">
                 <label for="new_category">Uuden kategorian nimi</label>
-                <input type="text" pattern="[A-ZÄÖÅa-zäöå]+" id="new_category" disabled required />
+                <input type="text" pattern="[A-ZÄÖÅa-zäöå0-9]+" id="new-category" disabled required />
             </div>
 
             <div class="d-flex flex-column">
                 <label for="price">Hinta</label>
-                <input type="number" min=0 id="price" step=".01" lang="fi" required />
+                <input type="number" min=0 id="price" step=".01" required />
             </div>
 
             <div class="d-flex flex-column">
@@ -46,7 +46,7 @@
             </div>
 
             <div class="d-flex justify-content-between">
-                <button class="primary" type="button">Peruuta</button>
+                <button class="primary" type="button" onclick="javascript:hideAddExpenseModal()">Peruuta</button>
                 <button class="button button-primary" type="submit">Lisää</button>
             </div>
 
@@ -88,6 +88,8 @@
             </div>
         </div>
     </div>
+
+    <button onclick="javascript:showAddExpenseModal()">Add Expense</button>
 
 </body>
 

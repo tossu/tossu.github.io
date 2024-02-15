@@ -1,7 +1,16 @@
+function showAddExpenseModal() {
+    const element = document.getElementById("add-expense-modal");
+    element.classList.remove("hidden");
+}
+
+function hideAddExpenseModal() {
+    const element = document.getElementById("add-expense-modal");
+    element.classList.add("hidden");
+}
 
 function onSubmit() {
     const category = document.getElementById("category");
-    const newCategory = document.getElementById("new_category");
+    const newCategory = document.getElementById("new-category");
     const price = document.getElementById("price");
     const description = document.getElementById("description");
 
@@ -15,15 +24,16 @@ function onSubmit() {
 }
 
 function onCategorySelected(e) {
-    // TODO: Helper functions for adding / removing class
     const newCategoryContainer = document.getElementById("new-category-container");
-    const newCategoryInput = document.getElementById("new_category");
+    const newCategoryInput = document.getElementById("new-category");
     if (e.value === "_new") {
-        newCategoryContainer.setAttribute("class", "d-flex flex-column");
+        newCategoryContainer.classList.remove("hidden");
         newCategoryInput.removeAttribute("disabled");
+        newCategoryInput.value = "";
     } else {
-        newCategoryContainer.setAttribute("class", "d-flex flex-column hidden");
+        newCategoryContainer.classList.add("hidden");
         newCategoryInput.setAttribute("disabled", true);
+        newCategoryInput.value = "";
     }
 }
 
