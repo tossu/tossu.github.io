@@ -19,29 +19,6 @@
     <a href="expenses.html">Menot</a>
 
 
-    <div id="add-expense-modal" class="modal d-flex flex-column hidden">
-
-        <div class="d-flex justify-content-end" onClick="javascript:hideAddExpenseModal()">
-            X
-        </div>
-
-        <h1>Muokkaa kategoriaa</h1>
-
-        <form onsubmit="javascript:event.preventDefault();onSubmit()">
-
-            <div class="d-flex flex-column">
-                <label for="price">Budjettin suuruus</label>
-                <input type="number" min=0 id="price" step=".01" required />
-            </div>
-
-            <div class="d-flex justify-content-between">
-                <button class="primary" type="button" onclick="javascript:hideAddExpenseModal()">Peruuta</button>
-                <button class="button button-primary" type="submit">Tallenna</button>
-            </div>
-
-        </form>
-    </div>
-
     <div id="header">
         <h1>Budjetti</h1>
         <small>Helmikuu 2024</small>
@@ -61,13 +38,13 @@
             <div data-budget-expand-id="1234" class="hidden p-1" style="background-color: #f3f3f3;">
                 <form style="margin: 0; padding: 0;" onsubmit="javascript:event.preventDefault();">
                     <label>Nimi</label>
-                    <input type="text" value="Ruoka" oninput="javascript:changeName(this)" />
+                    <input type="text" pattern="[A-ZÄÖÅa-zäöå0-9]+" required value="Ruoka" />
                     <label>Suunniteltu kulu</label>
-                    <input type="number" value="200" oninput="javascript:changeBudget(this)" />
+                    <input type="number" min=0 id="price" step=".01" required value="200" />
 
                     <div class="d-flex justify-content-between">
                         <button type="submit" class="button">Tallenna</button>
-                        <button type="button" class="button">Poista</button>
+                        <button type="button" class="button" onclick="javascript:deleteCategory(e)">Poista</button>
                     </div>
                 </form>
 
