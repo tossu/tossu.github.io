@@ -81,7 +81,7 @@ function createExpandElement(name, value) {
 
     const expandElement = document.createElement("div");
     expandElement.setAttribute("class", "expand hidden p-1");
-    expandElement.setAttribute("style", "ackground-color: #f3f3f3;");
+    expandElement.setAttribute("style", "background-color: #f3f3f3;");
     expandElement.append(formElement);
 
     return expandElement;
@@ -155,6 +155,6 @@ function init() {
 
 }
 
-window.onload = () => {
+window.onload = (event) => {
     init();
 };
