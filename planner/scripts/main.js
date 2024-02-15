@@ -1,8 +1,5 @@
 
-function onSubmit(e) {
-    console.log("LOL");
-    console.log(e);
-
+function onSubmit() {
     const category = document.getElementById("category");
     const newCategory = document.getElementById("new_category");
     const price = document.getElementById("price");
@@ -24,7 +21,6 @@ function onCategorySelected(e) {
     if (e.value === "_new") {
         newCategoryContainer.setAttribute("class", "d-flex flex-column");
         newCategoryInput.removeAttribute("disabled");
-        newCategoryInput.focus();
     } else {
         newCategoryContainer.setAttribute("class", "d-flex flex-column hidden");
         newCategoryInput.setAttribute("disabled", true);
