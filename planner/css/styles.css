@@ -35,6 +35,14 @@
     padding: 1em;
 }
 
+.pt-3 {
+    padding-top: 3em;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
 /* Chart / Bars */
 
 div.chart>div.category>div.bar {
@@ -88,4 +96,23 @@ div.chart>div.category>div.bar>div:nth-child(2) {
 
     background-color: white;
     padding: 1em;
+}
+
+
+/* Expense */
+
+#expenses {
+    margin-bottom: 3em;
+}
+
+.expense {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.expense > div {
+    padding: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
