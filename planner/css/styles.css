@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     font-family: Verdana, sans-serif;
     color: #212427;
 }
@@ -23,10 +21,18 @@
     justify-content: end;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
 /* Utils */
 
 .hidden { 
     display: none;
+}
+
+.p-1 {
+    padding: 1em;
 }
 
 /* Chart / Bars */
@@ -35,16 +41,19 @@ div.chart>div.category>div.bar {
     display: flex;
     justify-content: space-between;
 
-    width: calc(100% - 2em);
+    width: calc(100% - 4em);
     padding: 0.5em;
-    margin: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
     background: linear-gradient(90deg, var(--color) var(--percentage), #fff var(--percentage));
 }
 
 div.chart>div.category>div.label {
     float: left;
     width: calc(100% - 1em);
-    padding: 0.5em;
+    padding: 1em;
 }
 
 div.chart>div.category>div.bar>div:nth-child(2) {
