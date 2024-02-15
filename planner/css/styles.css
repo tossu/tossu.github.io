@@ -5,26 +5,22 @@
     color: #212427;
 }
 
-/* Generic */
+/* FLEX */
 
-h3 {
-    padding: 0.5em;
-}
-
-.flex {
+.d-flex {
     display: flex;
-}
-
-.flex-space-between {
-    justify-content: space-between;
-}
-
-.flex-end {
-    justify-content: end;
 }
 
 .flex-column {
     flex-direction: column;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: end;
 }
 
 /* Chart / Bars */
