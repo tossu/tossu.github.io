@@ -13,9 +13,18 @@
 </head>
 
 <body>
-    <a href="index.html">Etusivu</a>
-    <a href="budget.html">Budjetti</a>
-    <a href="expenses.html">Menot</a>
+    <div id="menu">
+        <div class="header p-1 d-flex justify-content-end" onclick="expandToggle(this)">
+            MENU
+        </div>
+        <div class="expand hidden">
+            <ul>
+                <li class="p-1"><a href="index.html">Etusivu</a></li>
+                <li class="p-1"><a href="budget.html">Budjetti</a></li>
+                <li class="p-1"><a href="expenses.html">Menot</a></li>
+            </ul>
+        </div>
+    </div>
 
     <div id="add-category-modal" class="modal hidden d-flex flex-column">
 
@@ -34,11 +43,12 @@
 
             <div class="d-flex flex-column">
                 <label>Budjetoitu kulu</label>
-                <input type="number" min=0 step=".01" placeholder="200" required  />
+                <input type="number" min=0 step=".01" placeholder="200" required />
             </div>
 
             <div class="d-flex justify-content-between">
-                <button class="primary" type="button" onclick="javascript:hideAddExpenseModal('add-category-modal')">Peruuta</button>
+                <button class="primary" type="button"
+                    onclick="javascript:hideAddExpenseModal('add-category-modal')">Peruuta</button>
                 <button class="button button-primary" type="submit">Lisää</button>
             </div>
 

@@ -9,12 +9,22 @@
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="scripts/main.js"></script>
+    <script src="scripts/utils.js"></script>
 </head>
 
 <body>
-    <a href="index.html">Etusivu</a>
-    <a href="budget.html">Budjetti</a>
-    <a href="expenses.html">Menot</a>
+    <div id="menu">
+        <div class="header p-1 d-flex justify-content-end" onclick="expandToggle(this)">
+            MENU
+        </div>
+        <div class="expand hidden">
+            <ul>
+                <li class="p-1"><a href="index.html">Etusivu</a></li>
+                <li class="p-1"><a href="budget.html">Budjetti</a></li>
+                <li class="p-1"><a href="expenses.html">Menot</a></li>
+            </ul>
+        </div>
+    </div>
 
     <div id="header">
         <h1>Helmikuu</h1>
@@ -62,4 +72,5 @@
     </div>
 
 </body>
+
 </html>
