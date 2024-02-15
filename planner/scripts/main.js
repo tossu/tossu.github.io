@@ -1,5 +1,35 @@
 
+function onSubmit(e) {
+    console.log("LOL");
+    console.log(e);
 
+    const category = document.getElementById("category");
+    const newCategory = document.getElementById("new_category");
+    const price = document.getElementById("price");
+    const description = document.getElementById("description");
+
+
+    console.log({
+        category: category.value,
+        newCategory: newCategory.value || undefined,
+        price: parseFloat(price.value),
+        description: description.value
+    })
+}
+
+function onCategorySelected(e) {
+    // TODO: Helper functions for adding / removing class
+    const newCategoryContainer = document.getElementById("new-category-container");
+    const newCategoryInput = document.getElementById("new_category");
+    if (e.value === "_new") {
+        newCategoryContainer.setAttribute("class", "d-flex flex-column");
+        newCategoryInput.removeAttribute("disabled");
+        newCategoryInput.focus();
+    } else {
+        newCategoryContainer.setAttribute("class", "d-flex flex-column hidden");
+        newCategoryInput.setAttribute("disabled", true);
+    }
+}
 
 function getMonth() {
     const months = [

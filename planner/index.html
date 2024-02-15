@@ -8,63 +8,49 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/styles.css" />
-
-
     <script src="scripts/main.js"></script>
-
 </head>
 
 <body>
 
-
-    <!-- 
-        
-        Halutaan seurata budjetin kehitystä
-        - Paljonko budjettia jäljellä
-        - Kuinka paljon on käytetty
-        - Kuinka paljon ollaan menty budjetista ylitse
-
-    -->
-
-    <!--
-        Leveys riippuu isoimmasta budjetoidusta tai toteutuneesta arvosta
-        ja muut suhteutetaan sen mukaan.
-    -->
-
     <div id="modal" class="d-flex flex-column">
-        
+
         <div class="d-flex justify-content-end">
             X
         </div>
 
-        <div class="d-flex flex-column">
-            <label for="category">Kategoria</label>
-            <select name="category" id="category">
-                <option value="ruoka">Ruoka</option>
-                <option value="terveys">Terveys</option>
-                <option value="_new">Uusi kategoria</option>
-            </select>
-        </div>
+        <form onsubmit="onSubmit(this)">
 
-        <div class="d-flex flex-column">
-            <label for="_new_category">Uuden kategorian nimi</label>
-            <input type="text" id="_new_category" />
-        </div>
+            <div class="d-flex flex-column">
+                <label for="category">Kategoria</label>
+                <select id="category" name="category" onChange="onCategorySelected(this)" required>
+                    <option value="ruoka">Ruoka</option>
+                    <option value="terveys">Terveys</option>
+                    <option value="_new">Uusi kategoria</option>
+                </select>
+            </div>
 
-        <div class="d-flex flex-column">
-            <label for="price">Hinta</label>
-            <input type="text" id="price" />
-        </div>
+            <div id="new-category-container" class="d-flex flex-column hidden">
+                <label for="new_category">Uuden kategorian nimi</label>
+                <input type="text" pattern="[A-ZÄÖÅa-zäöå]+" id="new_category" disabled required />
+            </div>
 
-        <div class="d-flex flex-column">
-            <label for="description">Selite</label>
-            <textarea id="description"></textarea>
-        </div>
+            <div class="d-flex flex-column">
+                <label for="price">Hinta</label>
+                <input type="number" min=0 id="price" step=".01" lang="fi" required />
+            </div>
 
-        <div class="d-flex justify-content-between">
-            <button class="primary" type="button">Peruuta</button>
-            <button class="button button-primary" type="button">Lisää</button>
-        </div>
+            <div class="d-flex flex-column">
+                <label for="description">Selite</label>
+                <textarea id="description"></textarea>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <button class="primary" type="button">Peruuta</button>
+                <button class="button button-primary" type="submit">Lisää</button>
+            </div>
+
+        </form>
     </div>
 
     <div id="header">
