@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="scripts/budget.js"></script>
 </head>
 
@@ -15,6 +16,30 @@
     <a href="index.html">Etusivu</a>
     <a href="budget.html">Budjetti</a>
     <a href="expenses.html">Menot</a>
+
+
+    <div id="add-expense-modal" class="modal d-flex flex-column hidden">
+
+        <div class="d-flex justify-content-end" onClick="javascript:hideAddExpenseModal()">
+            X
+        </div>
+
+        <h1>Muokkaa kategoriaa</h1>
+
+        <form onsubmit="javascript:event.preventDefault();onSubmit()">
+
+            <div class="d-flex flex-column">
+                <label for="price">Budjettin suuruus</label>
+                <input type="number" min=0 id="price" step=".01" required />
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <button class="primary" type="button" onclick="javascript:hideAddExpenseModal()">Peruuta</button>
+                <button class="button button-primary" type="submit">Tallenna</button>
+            </div>
+
+        </form>
+    </div>
 
     <div id="header">
         <h1>Budjetti</h1>
@@ -27,27 +52,29 @@
             <div>
                 Ruoka
             </div>
-            <div>
-                <input type="number" value="200"/>
-            </div>
-            <div>
-                <button onclick="deleteCategory()">Poista</button>
-            </div>
-        </div>
-        <div class="expense">
-            <div>
-                Asuminen
-            </div>
-            <div>
-                <input type="number" value="200"/>
+            <div class="d-flex justify-content-between">
+                250
+
+                <div class="ml-1">
+                    <i class="fa fa-pencil-square fa-lg"></i>
+                    <i class="fa fa-trash fa-lg"></i>
+                </div>
             </div>
         </div>
         <div class="expense">
             <div>
-                Ravintola
+                Tietokone
             </div>
             <div>
-                <input type="number" value="200"/>
+                9000
+            </div>
+        </div>
+        <div class="expense">
+            <div>
+                Espresso kone
+            </div>
+            <div>
+                900
             </div>
         </div>
     </div>
