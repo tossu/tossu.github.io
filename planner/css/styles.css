@@ -74,8 +74,8 @@ div.chart>div.category>div.bar>div:nth-child(2) {
     top: 0;
     bottom: 0;
 
-    height: 100%;
-    width: 100%;
+    height: calc(100% - 2em);
+    width: calc(100% - 2em);
 
     background-color: white;
 
