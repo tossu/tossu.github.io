@@ -12,48 +12,7 @@
 </head>
 
 <body>
-
-    <div id="add-expense-modal" class="modal hidden d-flex flex-column">
-
-        <div class="d-flex justify-content-end" onClick="javascript:hideAddExpenseModal()">
-            X
-        </div>
-
-        <h1>Lisää kulu</h1>
-
-        <form onsubmit="javascript:event.preventDefault();onSubmit()">
-
-            <div class="d-flex flex-column">
-                <label for="category">Kategoria</label>
-                <select id="category" name="category" onChange="onCategorySelected(this)" required>
-                    <option value="ruoka">Ruoka</option>
-                    <option value="terveys">Terveys</option>
-                    <option value="_new">Uusi kategoria</option>
-                </select>
-            </div>
-
-            <div id="new-category-container" class="d-flex flex-column hidden">
-                <label for="new_category">Uuden kategorian nimi</label>
-                <input type="text" pattern="[A-ZÄÖÅa-zäöå0-9]+" id="new-category" disabled required />
-            </div>
-
-            <div class="d-flex flex-column">
-                <label for="price">Hinta</label>
-                <input type="number" min=0 id="price" step=".01" required />
-            </div>
-
-            <div class="d-flex flex-column">
-                <label for="description">Selite</label>
-                <textarea id="description"></textarea>
-            </div>
-
-            <div class="d-flex justify-content-between">
-                <button class="primary" type="button" onclick="javascript:hideAddExpenseModal()">Peruuta</button>
-                <button class="button button-primary" type="submit">Lisää</button>
-            </div>
-
-        </form>
-    </div>
+    <a href="expenses.html">Menot</a>
 
     <div id="header">
         <h1>Helmikuu</h1>
@@ -74,7 +33,6 @@
                 <div>Toteutunut</div>
             </div>
         </div>
-
 
         <div class="category">
             <div class="label">
@@ -101,40 +59,5 @@
         </div>
     </div>
 
-    <div id="expenses" class="d-flex flex-column">
-        <div class="p-1 pt-3 pb-0">
-            Menot
-        </div>
-        <div class="expense">
-            <div>
-            30e
-            </div>
-            <div>
-                Ruoka hesburger
-            </div>
-        </div>
-        <div class="expense">
-            <div>
-            30e
-            </div>
-            <div>
-                Ruoka hesburger
-            </div>
-        </div>
-        <div class="expense">
-            <div>
-            30e
-            </div>
-            <div>
-                Ruoka hesburger
-            </div>
-        </div>
-    </div>
-
-    <div class="d-flex justify-content-center">
-    <button onclick="javascript:showAddExpenseModal()">Add Expense</button>
-    </div>
-
 </body>
-
 </html>

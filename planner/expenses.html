@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Budjetti suunnittelija</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+
+    <a href="index.html">Etusivu</a>
+
+    <div id="add-expense-modal" class="modal hidden d-flex flex-column">
+
+        <div class="d-flex justify-content-end" onClick="javascript:hideAddExpenseModal()">
+            X
+        </div>
+
+        <h1>Lisää kulu</h1>
+
+        <form onsubmit="javascript:event.preventDefault();onSubmit()">
+
+            <div class="d-flex flex-column">
+                <label for="category">Kategoria</label>
+                <select id="category" name="category" onChange="onCategorySelected(this)" required>
+                    <option value="ruoka">Ruoka</option>
+                    <option value="terveys">Terveys</option>
+                    <option value="_new">Uusi kategoria</option>
+                </select>
+            </div>
+
+            <div id="new-category-container" class="d-flex flex-column hidden">
+                <label for="new_category">Uuden kategorian nimi</label>
+                <input type="text" pattern="[A-ZÄÖÅa-zäöå0-9]+" id="new-category" disabled required />
+            </div>
+
+            <div class="d-flex flex-column">
+                <label for="price">Hinta</label>
+                <input type="number" min=0 id="price" step=".01" required />
+            </div>
+
+            <div class="d-flex flex-column">
+                <label for="description">Selite</label>
+                <textarea id="description"></textarea>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <button class="primary" type="button" onclick="javascript:hideAddExpenseModal()">Peruuta</button>
+                <button class="button button-primary" type="submit">Lisää</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div id="header">
+        <h1>Menot</h1>
+        <small>Helmikuu 2024</small>
+    </div>
+
+
+    <div id="expenses" class="d-flex flex-column">
+        <div class="expense">
+            <div>
+            30e
+            </div>
+            <div>
+                Ruoka hesburger
+            </div>
+        </div>
+        <div class="expense">
+            <div>
+            20e
+            </div>
+            <div>
+                Nahkaruoska
+            </div>
+        </div>
+        <div class="expense">
+            <div>
+            9000e
+            </div>
+            <div>
+                Tietokone
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+    <button onclick="javascript:showAddExpenseModal()">Add Expense</button>
+    </div>
+
+</body>
+
+</html>
