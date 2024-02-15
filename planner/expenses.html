@@ -28,7 +28,7 @@
 
     <div id="add-expense-modal" class="modal hidden d-flex flex-column">
 
-        <div class="d-flex justify-content-end" onClick="javascript:hideAddExpenseModal('add-expense-modal')">
+        <div class="d-flex justify-content-end" onClick="javascript:hideElement('add-expense-modal')">
             X
         </div>
 
@@ -61,7 +61,7 @@
             </div>
 
             <div class="d-flex justify-content-between">
-                <button class="primary" type="button" onclick="javascript:hideAddExpenseModal('add-expense-modal')">Peruuta</button>
+                <button class="primary" type="button" onclick="javascript:hideElement('add-expense-modal')">Peruuta</button>
                 <button class="button button-primary" type="submit">Lisää</button>
             </div>
 
@@ -75,7 +75,7 @@
 
 
     <div class="d-flex justify-content-end mr-1">
-        <button onclick="javascript:showAddExpenseModal('add-expense-modal')">Lisää meno</button>
+        <button onclick="javascript:showElement('add-expense-modal')">Lisää meno</button>
     </div>
 
     <div id="expenses" class="d-flex flex-column">
