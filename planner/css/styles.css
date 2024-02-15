@@ -64,7 +64,7 @@ div.chart>div.category>div.bar {
 
 div.chart>div.category>div.label {
     float: left;
-    width: calc(100% - 1em);
+    width: calc(100% - 2em);
     padding: 1em;
 }
 
