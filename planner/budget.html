@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="scripts/budget.js"></script>
+    <script src="scripts/utils.js"></script>
 </head>
 
 <body>
@@ -25,9 +24,10 @@
     </div>
 
 
-    <div id="expenses" class="d-flex flex-column">
+    <div class="d-flex flex-column">
         <div class="d-flex flex-column">
-            <div class="d-flex justify-content-between p-1" data-budget-id="1234" onclick="javascript:toggleCategory(this)">
+            <div class="d-flex justify-content-between p-1"
+                onclick="javascript:expandToggle(this)">
                 <div>
                     Ruoka
                 </div>
@@ -35,11 +35,11 @@
                     250
                 </div>
             </div>
-            <div data-budget-expand-id="1234" class="hidden p-1" style="background-color: #f3f3f3;">
-                <form style="margin: 0; padding: 0;" onsubmit="javascript:event.preventDefault();">
+            <div class="expand hidden p-1" style="background-color: #f3f3f3;">
+                <form onsubmit="javascript:event.preventDefault();">
                     <label>Nimi</label>
                     <input type="text" pattern="[A-ZÄÖÅa-zäöå0-9]+" required value="Ruoka" />
-                    <label>Suunniteltu kulu</label>
+                    <label>Budjetoitu kulu</label>
                     <input type="number" min=0 id="price" step=".01" required value="200" />
 
                     <div class="d-flex justify-content-between">
@@ -47,8 +47,30 @@
                         <button type="button" class="button" onclick="javascript:deleteCategory(this)">Poista</button>
                     </div>
                 </form>
+            </div>
+        </div>
+        <div class="d-flex flex-column">
+            <div class="d-flex justify-content-between p-1"
+                onclick="javascript:expandToggle(this)">
+                <div>
+                    Ravintola
+                </div>
+                <div>
+                    9000
+                </div>
+            </div>
+            <div class="expand hidden p-1" style="background-color: #f3f3f3;">
+                <form onsubmit="javascript:event.preventDefault();">
+                    <label>Nimi</label>
+                    <input type="text" pattern="[A-ZÄÖÅa-zäöå0-9]+" required value="Ruoka" />
+                    <label>Budjetoitu kulu</label>
+                    <input type="number" min=0 id="price" step=".01" required value="200" />
 
-
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" class="button">Tallenna</button>
+                        <button type="button" class="button" onclick="javascript:deleteCategory(this)">Poista</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
