@@ -11,3 +11,13 @@ function expandToggle(e) {
     const expandElement = findExpandElement[0];
     expandElement.classList.toggle("hidden");
 }
+
+function showAddExpenseModal(id) {
+    const element = document.getElementById(id);
+    element.classList.remove("hidden");
+}
+
+function hideAddExpenseModal(id) {
+    const element = document.getElementById(id);
+    element.classList.add("hidden");
+}

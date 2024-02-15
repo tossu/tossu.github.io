@@ -1,13 +1,3 @@
-function showAddExpenseModal() {
-    const element = document.getElementById("add-expense-modal");
-    element.classList.remove("hidden");
-}
-
-function hideAddExpenseModal() {
-    const element = document.getElementById("add-expense-modal");
-    element.classList.add("hidden");
-}
-
 function onSubmit() {
     const category = document.getElementById("category");
     const newCategory = document.getElementById("new-category");
