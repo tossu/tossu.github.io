@@ -21,13 +21,11 @@ function acquisitionCostValues() {
     const sellPriceElement = document.getElementById("acquisition-cost-sell-price");
     const overTenYearsElement = document.getElementById("acquisition-cost-over-ten-years");
     const buyPriceElement = document.getElementById("acquisition-cost-buy-price");
-
     return {
         sellPrice: parseFloat(sellPriceElement.value),
         buyPrice: parseFloat(buyPriceElement.value) || undefined,
         percent: overTenYearsElement.checked ? 0.4 : 0.2,
     }
-
 }
 
 function acquisitionCost() {
