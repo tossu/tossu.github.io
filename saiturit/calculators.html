@@ -12,6 +12,7 @@
 
     <script type="text/javascript" src="scripts/acquisition.js"></script>
     <script type="text/javascript" src="scripts/rent_or_own.js"></script>
+    <script type="text/javascript" src="scripts/compound_annual_growth_rate.js"></script>
 </head>
 
 <body>
@@ -49,7 +50,7 @@
 
                 <div class="d-flex flex-row">
                     <label for="acquisition-cost-over-ten-years">Yli kymmenen vuotta
-                        <input id="acquisition-cost-over-ten-years" type="checkbox" value="true" checked/>
+                        <input id="acquisition-cost-over-ten-years" type="checkbox" value="true" checked />
                     </label>
                 </div>
 
@@ -64,34 +65,66 @@
             </form>
 
 
-            <h2><a href="#kannattaako-omistusasunto" name="kannattaako-omistusasunto"a">Kannattaako omistusasunto</a></h2>
+            <h2><a href="#kannattaako-omistusasunto" name="kannattaako-omistusasunto" a">Kannattaako omistusasunto</a>
+            </h2>
 
             <form onsubmit="event.preventDefault();rentOrOwn();">
 
-            <div class="pb-1 pt-1 d-flex flex-column">
-                <label for="rent-or-own-house-price">Asunnon hinta</label>
-                <input type="number" id="rent-or-own-house-price" required />
-            </div>
+                <div class="pb-1 pt-1 d-flex flex-column">
+                    <label for="rent-or-own-house-price">Asunnon hinta</label>
+                    <input type="number" id="rent-or-own-house-price" required />
+                </div>
 
-            
-            <div class="pb-1 d-flex flex-column">
-                <label for="rent-or-own-rent">Vuokra</label>
-                <input type="number" id="rent-or-own-rent" required/>
-            </div>
 
-            
-            <div class="pb-1 d-flex flex-column">
-                <label for="rent-or-own-rent-management-charge">Vastike</label>
-                <input type="number" id="rent-or-own-rent-management-charge" required/>
-            </div>
+                <div class="pb-1 d-flex flex-column">
+                    <label for="rent-or-own-rent">Vuokra</label>
+                    <input type="number" id="rent-or-own-rent" required />
+                </div>
 
-            <div class="pb-1 pt-1">
-                <button class="button" type="submit">Laske</button>
-            </div>
 
-            <div class="pb-1 text-break">
-                <pre><code class="text-break" id="rent-or-own-result">Tulos</code></pre>
-            </div>
+                <div class="pb-1 d-flex flex-column">
+                    <label for="rent-or-own-rent-management-charge">Vastike</label>
+                    <input type="number" id="rent-or-own-rent-management-charge" required />
+                </div>
+
+                <div class="pb-1 pt-1">
+                    <button class="button" type="submit">Laske</button>
+                </div>
+
+                <div class="pb-1 text-break">
+                    <pre><code class="text-break" id="rent-or-own-result">Tulos</code></pre>
+                </div>
+
+            </form>
+
+            <h2>Vuotuinen keskiarvo kasvu prosenteissa</h2>
+            <p><a href="https://www.investopedia.com/terms/c/cagr.asp">Compound Annual Growth Rate</a></p>
+
+            <form onsubmit="event.preventDefault();compoundAnnualGrowthRate();">
+
+                <div class="pb-1 pt-1 d-flex flex-column">
+                    <label for="compound-annual-growth-rate-start-price">Aloitus hinta</label>
+                    <input type="number" id="compound-annual-growth-rate-start-price" required />
+                </div>
+
+                <div class="pb-1 d-flex flex-column">
+                    <label for="compound-annual-growth-rate-end-price">Lopetus hinta</label>
+                    <input type="number" id="compound-annual-growth-rate-end-price" required />
+                </div>
+
+
+                <div class="pb-1 d-flex flex-column">
+                    <label for="compound-annual-growth-rate-years">Vuosia</label>
+                    <input type="number" id="compound-annual-growth-rate-years" required />
+                </div>
+
+                <div class="pb-1 pt-1">
+                    <button class="button" type="submit">Laske</button>
+                </div>
+
+                <div class="pb-1 text-break">
+                    <pre><code class="text-break" id="compound-annual-growth-rate-result">Tulos</code></pre>
+                </div>
 
             </form>
 

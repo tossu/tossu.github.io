@@ -3,7 +3,7 @@ function rentOrOwnResult(price, rent, managementCharge) {
     const landlordFees = (rent - managementCharge) * 12;
     const percentage = Math.round((landlordFees / price * 100) * 100) / 100;
 
-    const result = `((${rent} - ${managementCharge}) * 12 ) / ${price} = ${percentage}%`
+    const result = `((${rent}€ - ${managementCharge}€) * 12kk ) / ${price}€ = ${percentage}%`
 
     return result + "\n\n" + `Omistusasunto kannattaa kun korko on alle ${percentage}%`;
 }
