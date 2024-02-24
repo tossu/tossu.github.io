@@ -34,12 +34,12 @@
             <form onsubmit="event.preventDefault();javascript:acquisitionCost()">
                 <div class="pb-1 pt-1 d-flex flex-column">
                     <label for="acquisition-cost-buy-price">Ostohinta (vapaaehtoinen)</label>
-                    <input type="number" id="acquisition-cost-buy-price" />
+                    <input type="number" id="acquisition-cost-buy-price" placeholder="10000" />
                 </div>
 
                 <div class="pb-1 d-flex flex-column">
                     <label for="acquisition-cost-sell-price">Myyntihinta</label>
-                    <input type="number" id="acquisition-cost-sell-price" required />
+                    <input type="number" id="acquisition-cost-sell-price" placeholder="40000" required/>
                 </div>
 
                 <div class="d-flex flex-row">
@@ -64,17 +64,17 @@
             <form onsubmit="event.preventDefault();rentOrOwn();">
                 <div class="pb-1 pt-1 d-flex flex-column">
                     <label for="rent-or-own-house-price">Asunnon hinta</label>
-                    <input type="number" id="rent-or-own-house-price" required />
+                    <input type="number" id="rent-or-own-house-price" placeholder="120000" required />
                 </div>
 
                 <div class="pb-1 d-flex flex-column">
                     <label for="rent-or-own-rent">Vuokra</label>
-                    <input type="number" id="rent-or-own-rent" required />
+                    <input type="number" id="rent-or-own-rent" placeholder="650" required />
                 </div>
 
                 <div class="pb-1 d-flex flex-column">
                     <label for="rent-or-own-rent-management-charge">Vastike</label>
-                    <input type="number" id="rent-or-own-rent-management-charge" required />
+                    <input type="number" id="rent-or-own-rent-management-charge" placeholder="250" required />
                 </div>
 
                 <div class="pb-1 pt-1">
@@ -91,17 +91,17 @@
             <form onsubmit="event.preventDefault();compoundAnnualGrowthRate();">
                 <div class="pb-1 pt-1 d-flex flex-column">
                     <label for="compound-annual-growth-rate-start-price">Aloitus hinta</label>
-                    <input type="number" id="compound-annual-growth-rate-start-price" required />
+                    <input type="number" id="compound-annual-growth-rate-start-price" placeholder="10000" required />
                 </div>
 
                 <div class="pb-1 d-flex flex-column">
                     <label for="compound-annual-growth-rate-end-price">Lopetus hinta</label>
-                    <input type="number" id="compound-annual-growth-rate-end-price" required />
+                    <input type="number" id="compound-annual-growth-rate-end-price" placeholder="20000" required />
                 </div>
 
                 <div class="pb-1 d-flex flex-column">
                     <label for="compound-annual-growth-rate-years">Vuosia</label>
-                    <input type="number" id="compound-annual-growth-rate-years" required />
+                    <input type="number" id="compound-annual-growth-rate-years" placeholder="10" required />
                 </div>
 
                 <div class="pb-1 pt-1">

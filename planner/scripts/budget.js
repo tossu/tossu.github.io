@@ -35,8 +35,6 @@ function createExpandValueElement(value) {
     expandValueInputElement.setAttribute("required", true);
     expandValueInputElement.setAttribute("value", value);
 
-    // <input type="number" min=0 id="price" step=".01" required value="200" />
-
     const expandValueElement = document.createElement("div");
     expandValueElement.setAttribute("class", "d-flex flex-column");
 
@@ -104,28 +102,6 @@ function createBudgetElement(id, name, value) {
 
     const expandElement = createExpandElement(name, value);
 
-
-
-
-
-    /* <div class="expand hidden p-1" style="background-color: #f3f3f3;">
-    <form onsubmit="javascript:event.preventDefault();">
-        <div class="d-flex flex-column">
-            <label>Nimi</label>
-            <input type="text" pattern="[A-ZÄÖÅa-zäöå0-9]+" required value="Ruoka" />
-        </div>
-        <div class="d-flex flex-column">
-            <label>Budjetoitu kulu</label>
-            <input type="number" min=0 id="price" step=".01" required value="200" />
-        </div>
-        <div class="d-flex justify-content-between">
-            <button type="submit" class="button">Tallenna</button>
-            <button type="button" class="button" onclick="javascript:deleteCategory(this)">Poista</button>
-        </div>
-    </form>
-</div> */
-
-
     const container = document.createElement("div");
     container.setAttribute("class", "d-flex flex-column");
     container.append(rowElement);
@@ -133,9 +109,6 @@ function createBudgetElement(id, name, value) {
 
     return container;
 }
-
-
-
 
 function init() {
     const planned = {
