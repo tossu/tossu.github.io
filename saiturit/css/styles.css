@@ -1,25 +1,24 @@
 * {
     padding: 0;
     margin: 0;
-    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+html {
+    color: #222;
     font-family: Verdana,sans-serif;
 }
 
-body {
-    color: #212427;
-}
-
 p {
-    padding-top: 0.5em;
-    padding-bottom: 0.5m;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5em;
 
-    line-height: 1.66em;
+    line-height: 1.66rem;
     font-size: 16px;
 }
 
 h2, h3 {
-    padding-top: 2em;
-    padding-bottom: 0.5em;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
 }
 
 h2>a, h3>a {
@@ -32,8 +31,16 @@ a:focus {
     outline: none;
 }
 
+ul {
+    padding-left: 1rem;
+}
+
+ul>li {
+    padding-top: 0.5rem;
+}
+
 #container {
-    padding: 1em;
+    padding: 1rem;
     padding-bottom: 0;
     padding-top: 0;
 }
@@ -45,16 +52,8 @@ a:focus {
 }
 
 #header>h1 {
-    font-size: 4em;
+    font-size: 4rem;
     margin-bottom: 0;
-}
-
-ul {
-    padding-left: 1em;
-}
-
-ul>li {
-    padding-top: 0.5em;
 }
 
 #content {
@@ -67,8 +66,8 @@ ul>li {
 }
 
 .example {
-    margin-top: 0.75em;
-    padding: 1em;
+    margin-top: 0.75rem;
+    padding: 1rem;
     background-color: #f7f7f7;
 }
 

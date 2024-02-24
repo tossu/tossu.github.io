@@ -6,57 +6,12 @@
     <title>Saiturin käsikirja - Laskurit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="css/normalize.css" />
-
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/calculators.css" />
     <link rel="stylesheet" href="css/utils.css" />
 
-
-    <script>
-
-        function acquisitionCostResult(sellPrice, buyPrice, percent) {
-            const value = sellPrice - (sellPrice * percent);
-            const taxPercent = value > 30_000 ? 0.34 : 0.3;
-            const tax = value * taxPercent;
-
-            const normalTax = (sellPrice - buyPrice) > 30_000 ? 0.34 : 0.3;
-            const normalTaxValue = (sellPrice - buyPrice) * normalTax; 
-
-            const acquisitionCostResult = `${sellPrice}€ - ( ${sellPrice}€ * ${percent} ) = ${value}€\n${value}€ * ${taxPercent} = ${tax}€`;
-            const normalTaxResult = `(${sellPrice}€ - ${buyPrice}€) * ${normalTax} = ${normalTaxValue}€`;
-
-            if (buyPrice != null) {
-                return acquisitionCostResult + "\n\n" + normalTaxResult;
-            }
-
-            return acquisitionCostResult;
-        }
-
-
-        function acquisitionCostValues() {
-            const sellPriceElement = document.getElementById("acquisition-cost-sell-price");
-            const overTenYearsElement = document.getElementById("acquisition-cost-over-ten-years");
-            const buyPriceElement = document.getElementById("acquisition-cost-buy-price");
-
-            return {
-                sellPrice: parseFloat(sellPriceElement.value),
-                buyPrice: parseFloat(buyPriceElement.value) || undefined,
-                percent: overTenYearsElement.checked ? 0.4 : 0.2,
-            }
-
-        }
-
-        function acquisitionCost() {
-            const { sellPrice, buyPrice, percent } = acquisitionCostValues();
-            const result = acquisitionCostResult(sellPrice, buyPrice, percent);
-            const resultElement = document.getElementById("acquisition-cost-result");
-            resultElement.innerHTML = result;
-        }
-
-
-    </script>
-
+    <script type="text/javascript" src="scripts/acquisition.js"></script>
+    <script type="text/javascript" src="scripts/rent_or_own.js"></script>
 </head>
 
 <body>
@@ -71,6 +26,7 @@
         <div id="toc">
             <ul>
                 <li><a href="#hankintameno-olettama">Hankinta-olettama</a></li>
+                <li><a href="#kannattaako-omistusasunto">Kannattaako omistusasunto</a></li>
             </ul>
         </div>
 
@@ -104,6 +60,38 @@
                 <div class="pb-1">
                     <pre><code id="acquisition-cost-result">Tulos</code></pre>
                 </div>
+
+            </form>
+
+
+            <h2><a href="#kannattaako-omistusasunto" name="kannattaako-omistusasunto"a">Kannattaako omistusasunto</a></h2>
+
+            <form onsubmit="event.preventDefault();rentOrOwn();">
+
+            <div class="pb-1 pt-1 d-flex flex-column">
+                <label for="rent-or-own-house-price">Asunnon hinta</label>
+                <input type="number" id="rent-or-own-house-price" required />
+            </div>
+
+            
+            <div class="pb-1 d-flex flex-column">
+                <label for="rent-or-own-rent">Vuokra</label>
+                <input type="number" id="rent-or-own-rent" required/>
+            </div>
+
+            
+            <div class="pb-1 d-flex flex-column">
+                <label for="rent-or-own-rent-management-charge">Vastike</label>
+                <input type="number" id="rent-or-own-rent-management-charge" required/>
+            </div>
+
+            <div class="pb-1 pt-1">
+                <button class="button" type="submit">Laske</button>
+            </div>
+
+            <div class="pb-1">
+                <pre><code id="rent-or-own-result">Tulos</code></pre>
+            </div>
 
             </form>
 
