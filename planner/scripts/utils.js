@@ -22,7 +22,6 @@ function hideElement(id) {
     element.classList.add("hidden");
 }
 
-
 function epoch() {
     return Math.round((new Date).getTime() / 1000);
 }

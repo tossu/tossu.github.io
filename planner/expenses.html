@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>Budjetti suunnittelija</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/skeleton.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -78,62 +79,7 @@
         <button onclick="javascript:showElement('add-expense-modal')">Lisää meno</button>
     </div>
 
-    <div id="expenses" class="d-flex flex-column">
-        <div class="d-flex flex-column p-1">
-            <div class="d-flex justify-content-between" onclick="javascript:expandToggle(this)">
-                <div>
-                    30e
-                </div>
-                <div>
-                    Ruoka hesburger
-                </div>
-            </div>
-            <div class="expand hidden p-1" style="background-color: #f3f3f3;">
-                <form onsubmit="javascript:event.preventDefault();">
-                    <div class="d-flex flex-column">
-                        <label for="category">Kategoria</label>
-                        <select id="category" name="category" onchange="onCategorySelected(this)" required>
-                            <option value="ruoka">Ruoka</option>
-                            <option value="terveys">Terveys</option>
-                        </select>
-                    </div>
-
-                    <div class="d-flex flex-column">
-                        <label for="price">Hinta</label>
-                        <input type="number" min=0 id="price" step=".01" required value="30" />
-                    </div>
-        
-                    <div class="d-flex flex-column">
-                        <label for="description">Selite</label>
-                        <textarea id="description">Ruoka hesburger</textarea>
-                    </div>
-
-                    <div class="d-flex justify-content-between">
-                        <button type="submit" class="button">Tallenna</button>
-                        <button type="button" class="button" onclick="javascript:deleteExpense(this)">Poista</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="d-flex justify-content-between p-1">
-            <div>
-                20e
-            </div>
-            <div>
-                Nahkaruoska
-            </div>
-        </div>
-        <div class="d-flex justify-content-between p-1">
-            <div>
-                9000e
-            </div>
-            <div>
-                Tietokone
-            </div>
-        </div>
-    </div>
-
+    <div id="expenses" class="d-flex flex-column"></div>
 
 </body>
-
 </html>

@@ -85,21 +85,39 @@ function createExpandElement(name, value) {
     return expandElement;
 }
 
-function createBudgetElement(id, name, value) {
+function createRowElement(name, value) {
     const nameElement = document.createElement("div");
     const nameTextElement = document.createTextNode(name);
     nameElement.append(nameTextElement);
+
+    const rightContainer = document.createElement("div");
+    rightContainer.setAttribute("class", "d-flex justify-content-between");
 
     const valueElement = document.createElement("div");
     const valueTextElement = document.createTextNode(value);
     valueElement.append(valueTextElement);
 
+    const iconElement = document.createElement("div");
+    iconElement.setAttribute("class", "ml-1")
+    const icon = document.createElement("i");
+    icon.setAttribute("style", "color: #f2f2f2;")
+    icon.setAttribute("class", "fa fa-chevron-down");
+    iconElement.append(icon);
+
+    rightContainer.append(valueElement);
+    rightContainer.append(iconElement);
+
     const rowElement = document.createElement("div");
     rowElement.setAttribute("class", "d-flex justify-content-between p-1 budget-name");
     rowElement.setAttribute("onclick", "javascript:expandToggle(this)");
     rowElement.append(nameElement);
-    rowElement.append(valueElement);
+    rowElement.append(rightContainer);
 
+    return rowElement;
+}
+
+function createBudgetElement(id, name, value) {
+    const rowElement = createRowElement(name,value);
     const expandElement = createExpandElement(name, value);
 
     const container = document.createElement("div");
