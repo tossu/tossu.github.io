@@ -66,12 +66,13 @@ function createExpenseRowText(description, category) {
     const descriptionElementText = document.createTextNode(description ? description : category);
     descriptionElement.append(descriptionElementText);
 
-    const categoryElement = document.createElement("small");
-    const categoryElementText = document.createTextNode(category);
-    categoryElement.append(categoryElementText);
+    //const categoryElement = document.createElement("small");
+    //const categoryElementText = document.createTextNode(category);
+    //categoryElement.append(categoryElementText);
 
     const container = document.createElement("div");
-    container.setAttribute("class", "d-flex flex-column");
+    container.setAttribute("class", "d-flex flex-column ml-1");
+    container.setAttribute("style", "flex-grow: 1")
     container.append(descriptionElement);
     // container.append(categoryElement);
 
@@ -186,7 +187,6 @@ function createExpandButtons() {
     saveButton.setAttribute("type", "submit");
     saveButton.setAttribute("class", "button");
 
-
     const deleteButton = document.createElement("button");
     const deleteButtonText = document.createTextNode("Poista");
     deleteButton.append(deleteButtonText);
@@ -222,14 +222,40 @@ function createExpenseRowExpand(categories = []) {
     return expandElement;
 }
 
+function createMenuElement() {
+    const container = document.createElement("div");
+    container.setAttribute("class", "expand hidden");
+    container.setAttribute("style", "background-color: pink;")
+
+
+    const deleteLink = document.createElement("li");
+    const deleteLinkText = document.createTextNode("Poista");
+    deleteLink.append(deleteLinkText);
+
+    const editLink = document.createElement("li");
+    const editLinkText = document.createTextNode("Muokkaa");
+    editLink.append(editLinkText);
+
+    const ulElement = document.createElement("ul");
+    ulElement.append(deleteLink);
+    ulElement.append(editLink);
+
+    container.append(ulElement);
+
+
+    return container;
+}
+
 function createExpenseElement(id, date, value, description, categoryName, categories) {
     const expenseRowElement = createExpenseRow(id, date, value, description, categoryName);
     const expandElement = createExpenseRowExpand(categories);
+    const menuElement = createMenuElement();
 
     const container = document.createElement("div");
     container.setAttribute("class", "d-flex flex-column p-1");
     container.append(expenseRowElement);
-    container.append(expandElement);
+    // container.append(expandElement);
+    container.append(menuElement);
 
     return container;
 }
