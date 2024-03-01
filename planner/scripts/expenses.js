@@ -256,6 +256,27 @@ function init() {
             category: 3,
             price: 10,
             description: "Kaljaa"
+        },
+        {
+            id: (new Date()).getTime() / 1000 + 1,
+            date: new Date(),
+            category: 3,
+            price: 42,
+            description: "Olutta"
+        },
+        {
+            id: (new Date()).getTime() / 1000 + 1,
+            date: new Date(),
+            category: 3,
+            price: 666,
+            description: "Kaljaa"
+        },
+        {
+            id: (new Date()).getTime() / 1000 + 1,
+            date: new Date(),
+            category: 3,
+            price: 10,
+            description: "Viiniä"
         }
     ]
 
