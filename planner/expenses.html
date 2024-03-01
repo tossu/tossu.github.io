@@ -14,7 +14,16 @@
 </head>
 
 <body>
-    <div id="menu">
+    <div class="d-flex flex-row" style="border-bottom: 1px solid #cecece;">
+        <div class="p-1"><a style="text-decoration: none;" href="index.html">Etusivu</a></div>
+        <div class="p-1"><a style="text-decoration: none;" href="budget.html">Budjetti</a></div>
+        <div class="p-1"><a style="text-decoration: none;" href="expenses.html">Menot</a></div>
+        <div class="p-1" style="flex-grow: 1; text-align: right"><a style="color: pink"
+                onclick="javascript:showElement('add-expense-modal')"><i class="fa fa-plus" aria-hidden="true"></i>
+            </a></div>
+    </div>
+
+    <!-- <div id="menu">
         <div class="header p-1 d-flex justify-content-end" onclick="expandToggle(this)">
             <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
@@ -25,7 +34,7 @@
                 <li class="p-1"><a href="expenses.html">Menot</a></li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
     <div id="add-expense-modal" class="modal hidden d-flex flex-column">
 
@@ -76,15 +85,7 @@
     </div>
 
 
-    <div class="d-flex flex-row" style="border-bottom: 1px solid pink;">
-        <div class="p-1"><a style="text-decoration: none;" href="index.html">Etusivu</a></div>
-        <div class="p-1"><a style="text-decoration: none;" href="budget.html">Budjetti</a></div>
-        <div class="p-1" style="background-color: pink;"><a style="color: #fff; text-decoration: none;"
-                href="expenses.html">Menot</a></div>
-        <div class="p-1" style="flex-grow: 1; text-align: right"><a style="color: black"
-                onclick="javascript:showElement('add-expense-modal')"><i class="fa fa-plus" aria-hidden="true"></i>
-            </a></div>
-    </div>
+
 
 
     <!-- <div class="d-flex justify-content-end mr-1">
