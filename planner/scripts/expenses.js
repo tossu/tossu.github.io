@@ -3,6 +3,13 @@ function deleteExpense(e) {
     confirm("Haluatko varmasti poistaa tämän?");
 }
 
+function formatDate(date) {
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+}
+
 function onSubmit() {
     const category = document.getElementById("category");
     const newCategory = document.getElementById("new-category");
@@ -33,20 +40,67 @@ function onCategorySelected(e) {
 }
 
 
-function createExpenseRow(value, description, category) {
+function createExpenseRowValue(value) {
     const valueElement = document.createElement("div");
-    const valueElementText = document.createTextNode(value);
-    valueElement.append(valueElementText);
+    const valueElementBold = document.createElement("b");
+    const valueElementText = document.createTextNode(`-${value}€`);
+    valueElementBold.append(valueElementText);
+    valueElement.append(valueElementBold);
 
-    const textElement = document.createElement("div");
+    const icons = document.createElement("div");
+    icons.setAttribute("class", "ml-1");
+    const icon = document.createElement("i");
+    icon.setAttribute("class", "fa fa-ellipsis-v");
+    icons.append(icon);
+
+    const container = document.createElement("div");
+    container.setAttribute("class", "d-flex flex-row");
+    container.append(valueElement);
+    container.append(icons);
+
+    return container;
+}
+
+function createExpenseRowText(description, category) {
+    const descriptionElement = document.createElement("div");
+    const descriptionElementText = document.createTextNode(description ? description : category);
+    descriptionElement.append(descriptionElementText);
+
+    const categoryElement = document.createElement("small");
+    const categoryElementText = document.createTextNode(category);
+    categoryElement.append(categoryElementText);
+
+    const container = document.createElement("div");
+    container.setAttribute("class", "d-flex flex-column");
+    container.append(descriptionElement);
+    // container.append(categoryElement);
+
+    return container;
+}
+
+
+function createExpenseRow(id, date, value, description, category) {
+    const dateElement = document.createElement("div");
+    const dateElemenText = document.createTextNode(formatDate(date));
+    dateElement.append(dateElemenText);
+
+
+    const asd = createExpenseRowValue(value);
+
+    const dsa = createExpenseRowText(description, category);
+
+    /* const textElement = document.createElement("div");
     const textElementText = document.createTextNode(description ? description : category);
-    textElement.append(textElementText);
+    textElement.append(textElementText); */
 
     const container = document.createElement("div");
     container.setAttribute("class", "d-flex justify-content-between");
+    container.setAttribute("style", "border-bottom: 1px solid #eaeaea; padding: 1em; padding-top: 0em;")
     container.setAttribute("onclick", "javascript:expandToggle(this)");
-    container.append(valueElement);
-    container.append(textElement);
+
+    container.append(dateElement);
+    container.append(dsa);
+    container.append(asd);
 
     return container;
 }
@@ -162,14 +216,14 @@ function createExpenseRowExpand(categories = []) {
     formElement.append(buttons);
 
     const expandElement = document.createElement("div");
-    expandElement.setAttribute("class", "expand hidden p-1");
+    expandElement.setAttribute("class", "expand hidden");
     expandElement.setAttribute("style", "background-color: #f3f3f3");
     expandElement.append(formElement);
     return expandElement;
 }
 
-function createExpenseElement(value, description, categoryName, categories) {
-    const expenseRowElement = createExpenseRow(value, description, categoryName);
+function createExpenseElement(id, date, value, description, categoryName, categories) {
+    const expenseRowElement = createExpenseRow(id, date, value, description, categoryName);
     const expandElement = createExpenseRowExpand(categories);
 
     const container = document.createElement("div");
@@ -191,13 +245,17 @@ function init() {
 
     const expenses = [
         {
+            id: (new Date()).getTime() / 1000,
+            date: new Date(),
             category: 1,
             price: 200,
         },
         {
+            id: (new Date()).getTime() / 1000 + 1,
+            date: new Date(),
             category: 3,
             price: 10,
-            description: "LOL"
+            description: "Kaljaa"
         }
     ]
 
@@ -205,10 +263,10 @@ function init() {
 
     removeChildren(expensesList);
 
-    for (const [id, expense] of Object.entries(expenses)) {
-        const { category, price, description } = expense;
+    for (const [_, expense] of Object.entries(expenses)) {
+        const { id, date, category, price, description } = expense;
         const catagoryName = categories.find(value => value.id == category).name;
-        const element = createExpenseElement(price, description, catagoryName, categories);
+        const element = createExpenseElement(id, date, price, description, catagoryName, categories);
         expensesList.append(element);
     }
 }
