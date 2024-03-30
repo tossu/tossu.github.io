@@ -49,3 +49,19 @@ Tradekan jäsen saa -15% [A-katsastuksesta](https://www.tradeka.fi/jasenedut/vuo
 Jos tarvitset autoa erittäin vähän, kannattaa miettiä taksia tai vertaisvuokrauspalveluita, kuten [gomore](https://gomore.fi).
 
 Suosi pyöräilyä, se on paras ratkaisu niin taloudellisesti kuin terveydellisesti.
+
+## Asuminen
+
+Asumisessa kannattaa huomioida sivukuluja.
+
+Asunnon sijainti vaikuttaa vahvasti liikkumiseen. Jos asunto on huonolla sijainnilla pitää töihin ja kauppaa liikua pitkiä matkoja. Liikkumiseen käytettyn rahan voisi käyttää korkeampaan vuokraan keskustassa ja samalla säästää aikaa. Mieti missä on lähin ruokakauppa, jos asunnon lähellä on vain pieni ruokakauppa on siinä todennäköisesti kallista asioida.
+
+Jos olet salihirmu kannattaa huomioida taloyhtiön kuntosali kokonaiskuluissa. Omistusasuja voi hakeutua taloyhtiön hallitukseen ja järjestää kuntosalin kellariin.
+
+Kuuluuko asuntoon ilmainen netti, se säästää helposti kymppejä kuukaudessa.
+
+Ilmainen autopaikka on myös rahanarvoinen etu.
+
+Lämmityksessä kannattaa välttää kallista suorasähkölämmitystä. Suosi edullista kauko- ja maalämpöä.
+
+Velallisen omistusasujan kannattaa miettiä millä korolla lainansa ottaa. Lyhyet euriborit on ollut järjestäin pienempiä kuin koko vuoden euribor. [Kannattaako asuntolaina päivittää lyhyempään euribor-korkoon?](https://www.omavaraisuushaaste.com/kannattaako-asuntolaina-paivittaa-lyhyempaan-euribor-korkoon/)
