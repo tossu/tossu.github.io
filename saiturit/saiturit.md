@@ -31,3 +31,21 @@ Jos pörssisähköön siirtyminen askarruttaa, kannattaa pörssisähkön hinta s
 Tämän lisäksi kannattaa vähintään käyttää led-valaisimia ja luopua pahimmista sähkösyöpöistä. Jääkaappin kulutukseen voi vaikuttaa imuroimalla ja sulattamalla pakastimen. Imurointia suositellaan myös paloturvallisuuden takia. Latteiden sähkökulutusta voi tarkkailla erillisellä pistorasiaan liitettävällä sähkönkulutusmittarilla.
 
 Aurinkopaneelit eivät kannata. Ennen aurinkopaneelien hankintaa on tärkeää harkita huolellisesti niiden taloudellista hyötyä. Aurinkopaneelit tuottavat parhaiten sähköä kesällä, jolloin sähkön hinta on yleensä alhaisempi. Talviaikaan, erityisesti iltaisin, aurinkopaneelit eivät välttämättä tuota riittävästi sähköä kattamaan tarpeita. Lisäksi, mikäli aurinkopaneelien hankintaan käytetty raha sijoitettaisiin pörssimarkkinoille, voi siitä saada suuremman hyödyn kuin aurinkopaneeleista.
+
+## Puhelinliittyma
+
+Liittymän hinnassa voi säästää kilpailuttamalla. Kilpailuttaminen onnistuu parhaiten vaihtamalla liittymän kilpailijalle, jonka jälkeen nykyinen operaattori tekee yleensä vastatarjouksen. Vastatarjouksen tekijällä on yleensä oikeus tehdä parempia tarjouksia vastatarjouksena kuin muuten.
+
+## Liikkuminen
+
+Autoa ei kannata omistaa. Auto on pahin henkilökohtaisen talouden tuhoaja. Autolla on valtavasti kuluja kuten vakuutukset, huollot, katsastukset, bensat, autopaikka, arvonalenema yms.
+
+Auton suurin meno on arvonalenema. Arvonalenema on noin 10% vuodessa ja yli 5 vuotta vanhoille autoille 7% vuodessa. Arvonalenemisen voit laskea helposti [laskurilla](https://raha.fi/auton-arvon-aleneminen-laskuri/).
+
+Koska autottomuus ei ole kaikille mahdollista kannattaa huomioida auton käyttökustannukset, hinta, kestävyys ja huoltojen kustannukset. Ennen auton hankintaa kannattaakin tutustua esimerkiksi trafin [katsastustilastoihin](https://tieto.traficom.fi/fi/tilastot/katsastustilasto). Itse ostaisin todennököisesti pienkikulutuksellisen ja edullisesti huollettavan Toyotan.
+
+Tradekan jäsen saa -15% [A-katsastuksesta](https://www.tradeka.fi/jasenedut/vuosietu/15-alennus-katsastuksesta).
+
+Jos tarvitset autoa erittäin vähän, kannattaa miettiä taksia tai vertaisvuokrauspalveluita, kuten [gomore](https://gomore.fi).
+
+Suosi pyöräilyä, se on paras ratkaisu niin taloudellisesti kuin terveydellisesti.
