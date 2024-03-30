@@ -18,8 +18,16 @@ Toiseksi helpoin tapa säästää on erota ammattiliitosta. Ammattiliiton jäsen
 Esimerkiksi työntekijän palkka on noin 2000 euroa kuukaudessa ja PAMin jäsenmaksu on 1,5 % bruttopalkasta. Jäsen maksaa vuodessa 375 euroa jäsenmaksua. Kun tuo summa vähennetään veronalaisesta tulosta, maksettava vero on noin 110 euroa pienempi kuin ilman vähennystä. Näin ollen maksettavaksi nettojäsenmaksuksi jää noin 265 euroa. 
 ```
 
-[Lähde, PAM: ay-jasenmaksun-verovahennysoikeus](https://www.pam.fi/jasenyys/jasenelle/jasenmaksu/ay-jasenmaksun-verovahennysoikeus/).
+[Lähde: PAM ay-jasenmaksun-verovahennysoikeus](https://www.pam.fi/jasenyys/jasenelle/jasenmaksu/ay-jasenmaksun-verovahennysoikeus/).
 
 **Muista kuitenkin liittyä työttömyyskassaan että saat ansiosidonnaisen.**
 
 ## Sähkö
+
+Ensiksi kannattaa selvittää oma sähkönkulutus, tämä onnistuu helposti sähkölaskusta. Tämän jälkeen kannattaa vertailla sopimuksia [sahkonhinta](https://www.sahkonhinta.fi/)-palvelussa.
+
+Jos pörssisähköön siirtyminen askarruttaa, kannattaa pörssisähkön hinta selvittää edelliseltä vuodelta [liukuri](https://liukuri.fi/)-palvelussa. Liukuri palveluun syötetään kantaverkkoyhtiö [fingridin](https://www.fingrid.fi/)-sivulta saatavat tarkat sähkökunkulutustiedot, minkä perusteella lasketaan todellinen hinta pörssisähkölle.
+
+Tämän lisäksi kannattaa vähintään käyttää led-valaisimia ja luopua pahimmista sähkösyöpöistä. Jääkaappin kulutukseen voi vaikuttaa imuroimalla ja sulattamalla pakastimen. Imurointia suositellaan myös paloturvallisuuden takia. Latteiden sähkökulutusta voi tarkkailla erillisellä pistorasiaan liitettävällä sähkönkulutusmittarilla.
+
+Aurinkopaneelit eivät kannata. Ennen aurinkopaneelien hankintaa on tärkeää harkita huolellisesti niiden taloudellista hyötyä. Aurinkopaneelit tuottavat parhaiten sähköä kesällä, jolloin sähkön hinta on yleensä alhaisempi. Talviaikaan, erityisesti iltaisin, aurinkopaneelit eivät välttämättä tuota riittävästi sähköä kattamaan tarpeita. Lisäksi, mikäli aurinkopaneelien hankintaan käytetty raha sijoitettaisiin pörssimarkkinoille, voi siitä saada suuremman hyödyn kuin aurinkopaneeleista.
