@@ -8,7 +8,7 @@ Helpoin tapa säästää on erota kirkosta. Kirkollisvero on noin 1-2% bruttopal
 
 ```Esimerkiksi 2300e/kk kuukausituloilla ja 2% veroprosentilla kirkollisvero maksaa 438,77 € vuodessa.```
 
-### Ammattiliitto
+## Ammattiliitto
 
 Toiseksi helpoin tapa säästää on erota ammattiliitosta. Ammattiliiton jäsenmaksu on helposti 1.5% bruttopalkasta, mutta vaihtelee liitoittain. 
 
@@ -18,7 +18,7 @@ Toiseksi helpoin tapa säästää on erota ammattiliitosta. Ammattiliiton jäsen
 
 ***Muista kuitenkin liittyä työttömyyskassaan että saat ansiosidonnaisen.***
 
-### Sähkö
+## Sähkö
 
 Ensiksi kannattaa selvittää oma sähkönkulutus, tämä onnistuu helposti sähkölaskusta. Tämän jälkeen kannattaa vertailla sopimuksia [sahkonhinta](https://www.sahkonhinta.fi/)-palvelussa.
 
@@ -28,11 +28,11 @@ Tämän lisäksi kannattaa vähintään käyttää led-valaisimia ja luopua pahi
 
 Aurinkopaneelit eivät kannata. Ennen aurinkopaneelien hankintaa on tärkeää harkita huolellisesti niiden taloudellista hyötyä. Aurinkopaneelit tuottavat parhaiten sähköä kesällä, jolloin sähkön hinta on yleensä alhaisempi. Talviaikaan, erityisesti iltaisin, aurinkopaneelit eivät välttämättä tuota riittävästi sähköä kattamaan tarpeita. Lisäksi, mikäli aurinkopaneelien hankintaan käytetty raha sijoitettaisiin pörssimarkkinoille, voi siitä saada suuremman hyödyn kuin aurinkopaneeleista.
 
-### Puhelinliittymä
+## Puhelinliittymä
 
 Puhelin on välttömättömyys tänä päivänä, mutta liittymät ovat kalliita. Liittymän hinnassa voi kuitenkin säästää pitkän pennin kilpailuttamalla. Kilpailuttaminen onnistuu parhaiten vaihtamalla liittymän kilpailijalle, jonka jälkeen nykyinen operaattori tekee yleensä vastatarjouksen. Vastatarjouksen tekijällä on yleensä oikeus tehdä parempia tarjouksia vastatarjouksena kuin muuten.
 
-### Liikkuminen
+## Liikkuminen
 
 Autoa ei kannata omistaa. Auto on pahin henkilökohtaisen talouden tuhoaja. Autolla on valtavasti kuluja kuten vakuutukset, huollot, katsastukset, bensat, autopaikka, arvonalenema yms.
 
@@ -46,7 +46,7 @@ Jos tarvitset autoa erittäin vähän, kannattaa miettiä taksia tai vertaisvuok
 
 Suosi pyöräilyä, se on paras ratkaisu niin taloudellisesti kuin terveydellisesti.
 
-### Asuminen
+## Asuminen
 
 Asumisessa kannattaa huomioida sivukuluja.
 
@@ -72,7 +72,7 @@ Ideaali tilanne on pienellä korolla ja mahdollisimman pitkällä laina-ajalla o
 
 Velallisen omistusasujan kannattaa miettiä millä korolla lainansa ottaa. Lyhyet euriborit on ollut järjestäin pienempiä kuin koko vuoden euribor. [Kannattaako asuntolaina päivittää lyhyempään euribor-korkoon?](https://www.omavaraisuushaaste.com/kannattaako-asuntolaina-paivittaa-lyhyempaan-euribor-korkoon/)
 
-### Ruoka
+## Ruoka
 
 Ruuanlaitossa kannattaa ennakoida. Suunnittele ruuat etukäteen ja tee isoja ennoksia kerrallaa, eli [preppaa](https://www.meillakotona.fi/artikkelit/meal-prepping-eli-preppaus). Suunnitelemalla ruuat etukäteen vältyt myös turhilta ostoksilta ja hävikiltä. Säästät myös aikaa ja vaivaa kun valmistelet ruuat muutaman kerran viikossa.
 
@@ -98,7 +98,7 @@ Tutustu Marttojen [kotiruokaa kolikolla oppaaseen](https://www.martat.fi/teemat/
 
 ```Esimerkiksi 8e päivä budjetilla pääsee 250e kuukausi kustannuksiin. Tämä onnistuu helposti valmistamalla kaikki ruuat itse. Lisäksi muiden päivin budjettia voi nostaa tekemällä muutamana päivänä halvempia ruokia, esimerkiksi makaroonilaatikkoa, lasagnea tai vaikka jauhelihakeittoa.```
 
-### Verot
+## Verot
 
 Vaikka verot ovat kuolettavan tylsiä kannattaa niihin silti tutustua, koska hyvällä verosuunnittelulla voi säästää paljon.
 
@@ -110,7 +110,7 @@ Jos tilaat siivojan tai teetät remonttia kotona kannattaa huomioida [kotitalous
 
 Kannattaa myös huomioida jäännösveron (mätkyjen) korko, eli kannattaa maksaa verot ennemmin [ennakkoverona](https://www.vero.fi/henkiloasiakkaat/verokortti-ja-veroilmoitus/ennakkovero-henkiloasiakas/). "Jäännösverolle lasketaan huojennettua viivästyskorkoa 1.2.2024 alkaen eräpäivään saakka. Korko on mukana summassa, joka näkyy OmaVerossa ja verotuspäätöksessä. Huojennettu viivästyskorko on 6 % vuonna 2024." [Lähde](https://www.vero.fi/henkiloasiakkaat/maksaminen/jaannosveron-maksaminen/).
 
-### Sijoittaminen
+## Sijoittaminen
 
 ***HUOM! Tämä ei ole sijoitusneuvontaa, eikä kirjoittaja ole sijoitusalan ammattilainen, jokainen tekee sijotukset omalla vastuulla. Sijoittamisessa on aina riskinsä ja voit menettää sijoitetun varallisuuden.***
 
@@ -148,13 +148,13 @@ Esimerkin [lähde](https://www.salkunrakentaja.fi/2013/09/nin-hydynnt-hankintame
 
 Osakesäästötili ei ole paras ratkaisu. Sijoitusten pitää olla erittäin pitkäaikaisia että osakesäästötilin veroetu voittaa hankintameno-olettaman. Hankintameno-olettamaa ei voi siis käyttää osakesäästötilin kanssa.
 
-### Minimalismi
+## Minimalismi
 
 Minimalismi on elämäntapa, jossa pyritään luomaan järjestystä kaaoksen keskelle vähentämällä tavaran määrää, sillä vähemmän on enemmän. Monet ottavat inspiraatiota omaan minimalismiinsa japanilaisen kirjailijan [Marie Kondōn](https://fi.wikipedia.org/wiki/Marie_Kond%C5%8D) teoksesta "KonMari: Siivouksen elämänmullistava taika". Teoksen keskeinen ajatus on luopua merkityksettömistä esineistä ja tavoitella selkeyttä elämään. Tämä elämäntapa sopii erityisen hyvin saiturille.
 
 Luovu ylimääräisistä esineistä tai myy ne eteenpäin kirpputorilla. Harkitse tarkasti ennen kuin hankit asioita, onko se todella sellainen mitä tulet käyttämään jatkossa. 
 
-### Budjetointi
+## Budjetointi
 
 Säästämisen yksi tärkeimmistä asioista on budjetointi ja menojen kirjaus. Ilman menojen kirjaamista on todella vaikea hahmottaa todellisia kulujaan. Monella on pahana tapana tehdä pieniä mielitekoja, jotka sitten kasaantuvat isoksi kuluksi. Pienissä mieluhaluissa ei sinällään ole mitään pahaa kunhan tiedostaa kuinka paljon niihin käyttää ja se pysyy järkevissä rajoissa, eli budjetissa. 
 
@@ -162,7 +162,7 @@ Menojen seurannan tarkoitus on hahmottaa kuluttamisen kipupisteet. Kuinka paljon
 
 Budjetin tärkein oivallus on hahmottaa mihin haluaa rahansa oikeasti käyttää. Mikä on sinulle tärkeää? Pienet mielihalut vai ulkomaanmatka? Budjettia on myös tärkeätä seurata että siinä pysyy. Lisäksi on hyvä tarkistella budjettia, missä onnistuin, missä pitää parantaa? 
 
-### Ennakointi
+## Ennakointi
 
 Ennakointi toimii muuallakin kuin ruuanlaitossa.
 
@@ -170,13 +170,13 @@ Yllättäviin menoihin kannattaa varautua puskurilla. Yllättävie menoja voi ol
 
 Toinen tapa ennakoida on ostaa kulutustavaroita alennuksesta varastoon. Vararasto kannattaa kuitenkin pitää pienenä ettei asiat vanhene hyllyyn ja ostaa vain sellaisia asioita mitkä menevät varmasti käyttöön. 
 
-### Tarjouspäivät
+## Tarjouspäivät
 
 Isoimmat hankinnat kannattaa keskittää isojen tarjouspäivien ajalle, mutta kannattaa olla tarkkana hinnan kanssa. Kaupat monesti nostavat hintoja ennen tarjouspäiviä ja sitten myyvät tuotteita normaaliin tai korkeampaan hintaan, mutta "alennuksena". Tuotteiden hintahistoriaa voi tarkastella [Hintaoppaasta](https://hintaopas.fi/).
 
 Tarjouspäiviä ovat [Black Friday](https://fi.wikipedia.org/wiki/Black_Friday), [Cyber Monday](https://fi.wikipedia.org/wiki/Cyber_Monday), Amazon Prime Day, [Hullut Päivät](https://fi.wikipedia.org/wiki/Cyber_Monday), [Sokos 3+1 päivää](https://www.sokos.fi/kategoria/3-1-paivaa), Asiakasomistajapäivät yms.
 
-### Matkustaminen
+## Matkustaminen
 
 Matkustamisen ei tarvise olla kallista, mutta silloin pitää olla myös omatoimisempi.
 
@@ -192,7 +192,7 @@ Vähemmän omatoimisen kannattaa myös tarkkailla [äkkilähtöjä](https://www.
 
 [Norwegianin](https://www.banknorwegian.fi/luottokortti/cashpoints/) ja [Finnairin](https://www.finnair.com/fi-fi/finnair-plus/finnair-visa-luottokortti) luottokorteilla voi myös kerätä tavallisista ostoksista lentopisteitä.
 
-### Pelit
+## Pelit
 
 Pelaaminen onnistuu halvimmillaan kun malttaa mielensä ja ei osta pelejä julkaisupäivänä.
 
@@ -200,11 +200,11 @@ Pelejä kannattaa ostaa [Steam](https://store.steampowered.com/)-alennuksesta ta
 
 Lisäksi edullisia pelejä saattaa löytyä [Humble Bundlesta](https://www.humblebundle.com/).
 
-### Lemmikit
+## Lemmikit
 
 Älä ota lemmikkiä. Moni ei ajattele lemmikkiä hankkiessaan kustannuksia. Lemmikki maksaa kuitenkin helposti yli 500e vuodessa. Lemmikin ylläpitoo kuuluu niin ruuat, hiekat, rokotukset, sterilisaatio ja muut eläinlääkäri kulut. 
 
-### Hygienia
+## Hygienia
 
 Moni käyttää parranajoon kalliita tuotteita, mutta tuolle on vaihtoetho. Parranajo onnistuu edullisesti [safety razorilla](https://en.wikipedia.org/wiki/Safety_razor) tai [partaveitsellä](https://fi.wikipedia.org/wiki/Partaveitsi).
 
