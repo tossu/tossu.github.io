@@ -25,7 +25,7 @@ Tämän käsikirjan tavoitteena on auttaa ihmisiä säästämään ja kasvattama
 - [Lemmikit](#lemmikit)
 - [Hygienia](#hygienia)
 
-### Kirkollisvero
+## Kirkollisvero
 
 Helpoin tapa säästää on erota kirkosta. Kirkollisvero on noin 1-2% bruttopalkasta ja säästää satasia vuodessa. Voit laskea kirkollisveron suuruuden ja erota kirkosta helposti osoitteessa [eroakirkosta.fi](https://eroakirkosta.fi/). [ Kuntien ja seurakuntien tuloveroprosentit 2024](https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47465/kuntien-ja-seurakuntien-tuloveroprosentit-vuonna-2024/).
 
