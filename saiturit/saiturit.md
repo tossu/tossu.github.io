@@ -112,7 +112,7 @@ Kannattaa myös huomioida jäännösveron (mätkyjen) korko, eli kannattaa maksa
 
 ## Sijoittaminen
 
-***HUOM! Tämä ei ole sijoitusneuvontaa, eikä kirjoittaja ole sijoitusalan ammattilainen, jokainen tekee sijotukset omalla vastuulla. Sijoittamisessa on aina riskinsä ja voit menettää sijoitetun varallisuuden.***
+***HUOM! Tämä ei ole sijoitusneuvontaa, eikä kirjoittaja ole sijoitusalan ammattilainen, jokainen tekee sijotukset omalla vastuulla. Sijoittamisessa on aina riskinsä ja voit menettää sijoitetun pääoman.***
 
 Sijoittaminen tuntuu monesta rakettitieteeltä, mutta sitä se ei ole.
 
@@ -206,6 +206,6 @@ Lisäksi edullisia pelejä saattaa löytyä [Humble Bundlesta](https://www.humbl
 
 ## Hygienia
 
-Moni käyttää parranajoon kalliita tuotteita, mutta tuolle on vaihtoetho. Parranajo onnistuu edullisesti [safety razorilla](https://en.wikipedia.org/wiki/Safety_razor) tai [partaveitsellä](https://fi.wikipedia.org/wiki/Partaveitsi).
+Moni käyttää parranajoon kalliita tuotteita, mutta tuolle on vaihtoehto. Parranajo onnistuu edullisesti [safety razorilla](https://en.wikipedia.org/wiki/Safety_razor) tai [partaveitsellä](https://fi.wikipedia.org/wiki/Partaveitsi). Safety razorin vaihdettavat terät ovat muutaman sentin luokkaa Amazonissa.
 
 Leikkaamalla hiukset itse voi säästää myös pitkän pennin.
