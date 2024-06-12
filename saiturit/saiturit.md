@@ -65,7 +65,7 @@ Koska autottomuus ei ole kaikille mahdollista kannattaa huomioida auton käyttö
 
 Tradekan jäsen saa -15% [A-katsastuksesta](https://www.tradeka.fi/jasenedut/vuosietu/15-alennus-katsastuksesta).
 
-Jos tarvitset autoa erittäin vähän, kannattaa miettiä taksia tai vertaisvuokrauspalveluita, kuten [gomore](https://gomore.fi/). Voit myös vuokrata omaa autoasia gomoren kautta saada lisätuloja.
+Jos tarvitset autoa erittäin vähän, kannattaa miettiä taksia tai vertaisvuokrauspalveluita, kuten [gomore](https://gomore.fi/). Voit myös vuokrata omaa autoa gomoren kautta ja saada lisätuloja.
 
 Suosi pyöräilyä, se on paras ratkaisu niin taloudellisesti kuin terveydellisesti.
 
