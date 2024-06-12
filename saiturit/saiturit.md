@@ -130,7 +130,7 @@ SP500 indeksin 8% reaalituotto tuottaa 10 vuoden aikana 1.08^10 = 2.15, eli tupl
 
 Parhaan mahdollisen tuoton saamiseksi pitää kuitenkin vielä huomioida rahastojen kulut ja verotus. Kulut saa pidettyä maltillisena kuin ostaa ETF-indeksrihastoa. Verot taas saa pidettyä pienenä kun ostaa indeksirahastoa, joka uudelleen investoi osingot rahastoon, eli ostaa kasvurahastoa (acc nimessä, eli Accumulating). Tällöin maksat veroja vain voitoista. Lisäksi kannattaa huomioida että ETF on rakenteeltaan fyysinen, eli se oikeasti ostaa osakkeita, eikä esimerkiksi johdannaisia.
 
-Itse sijoitan pääsääntöisesti SP500 indeksiin, eli "[iShares Core S&P 500 UCITS ETF" (ISIN IE00B5BMR087)](https://www.ishares.com/uk/individual/en/products/253743/ishares-sp-500-b-ucits-etf-acc-fund) ja NASDAQ100 indeksiin "[iShares NASDAQ 100 UCITS ETF" (ISIN IE00B53SZB19)](https://www.ishares.com/uk/individual/en/products/253741/ishares-nasdaq-100-ucits-etf). ISIN on rahaston tunnistekoodi.
+Itse sijoitan pääsääntöisesti SP500 indeksiin, eli "[iShares Core S&P 500 UCITS ETF"](https://www.ishares.com/uk/individual/en/products/253743/ishares-sp-500-b-ucits-etf-acc-fund) (ISIN IE00B5BMR087) ja NASDAQ100 indeksiin "[iShares NASDAQ 100 UCITS ETF"](https://www.ishares.com/uk/individual/en/products/253741/ishares-nasdaq-100-ucits-etf) (ISIN IE00B53SZB19). ISIN on rahaston tunnistekoodi.
 
 ETF indeksrahastojen lisäksi voi käyttää pankkien omia ja edullisia rahastoja. Tälläinen on esimerkiksi [OP-Amerikka](https://www.op.fi/henkiloasiakkaat/saastot-ja-sijoitukset/rahastot/kaikki-rahastot/op-amerikka-indeksi).
 
