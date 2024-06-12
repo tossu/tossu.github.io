@@ -2,66 +2,15 @@ Tämän käsikirjan tavoitteena on auttaa ihmisiä säästämään ja kasvattama
 
 **TLDR; Eroa kirkosta ja ammattiliitosta, tee ruuat itse, kilpailuta liittymät ja hyödynnä veroedut. Sijoita saadut säästöt kustannustetehokkaasti indeksrirahastoihin. Vaurastu.**
 
-## Kirkollisvero
+### Kirkollisvero
 
-Helpoin tapa säästää on erota kirkosta. Kirkollisvero on noin 1-2% bruttopalkasta ja säästää satasia vuodessa. Voit laskea kirkollisveron suuruuden ja erota kirkosta helposti osoitteessa [eroakirkosta.fi](https://eroakirkosta.fi/). [Kuntien ja seurakuntien tuloveroprosentit 2024](https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47465/kuntien-ja-seurakuntien-tuloveroprosentit-vuonna-2024/).
+Helpoin tapa säästää on erota kirkosta. Kirkollisvero on noin 1-2% bruttopalkasta ja säästää satasia vuodessa. Voit laskea kirkollisveron suuruuden ja erota kirkosta helposti osoitteessa [eroakirkosta.fi](https://eroakirkosta.fi/). [ Kuntien ja seurakuntien tuloveroprosentit 2024](https://www.vero.fi/syventavat-vero-ohjeet/paatokset/47465/kuntien-ja-seurakuntien-tuloveroprosentit-vuonna-2024/).
 
-```
-Esimerkiksi 2300e/kk kuukausituloilla ja 2% veroprosentilla kirkollisvero maksaa 438,77 € vuodessa.
-```
+```Esimerkiksi 2300e/kk kuukausituloilla ja 2% veroprosentilla kirkollisvero maksaa 438,77 € vuodessa.```
 
-## Ammattiliitto
+### Ammattiliitto
 
 Toiseksi helpoin tapa säästää on erota ammattiliitosta. Ammattiliiton jäsenmaksu on helposti 1.5% bruttopalkasta, mutta vaihtelee liitoittain. 
 
-```
-Esimerkiksi työntekijän palkka on noin 2000 euroa kuukaudessa ja PAMin jäsenmaksu on 1,5 % bruttopalkasta. Jäsen maksaa vuodessa 375 euroa jäsenmaksua. Kun tuo summa vähennetään veronalaisesta tulosta, maksettava vero on noin 110 euroa pienempi kuin ilman vähennystä. Näin ollen maksettavaksi nettojäsenmaksuksi jää noin 265 euroa. 
-```
+```Esimerkiksi työntekijän palkka on noin 2000 euroa kuukaudessa ja PAMin jäsenmaksu on 1,5 % bruttopalkasta. Jäsen maksaa vuodessa 375 euroa jäsenmaksua. Kun tuo summa vähennetään veronalaisesta tulosta, maksettava vero on noin 110 euroa pienempi kuin ilman vähennystä. Näin ollen maksettavaksi nettojäsenmaksuksi jää noin 265 euroa. [Lähde](https://www.pam.fi/jasenyys/jasenelle/jasenmaksu/ay-jasenmaksun-verovahennysoikeus/). ```
 
-[Lähde: PAM ay-jasenmaksun-verovahennysoikeus](https://www.pam.fi/jasenyys/jasenelle/jasenmaksu/ay-jasenmaksun-verovahennysoikeus/).
-
-**Muista kuitenkin liittyä työttömyyskassaan että saat ansiosidonnaisen.**
-
-## Sähkö
-
-Ensiksi kannattaa selvittää oma sähkönkulutus, tämä onnistuu helposti sähkölaskusta. Tämän jälkeen kannattaa vertailla sopimuksia [sahkonhinta](https://www.sahkonhinta.fi/)-palvelussa.
-
-Jos pörssisähköön siirtyminen askarruttaa, kannattaa pörssisähkön hinta selvittää edelliseltä vuodelta [liukuri](https://liukuri.fi/)-palvelussa. Liukuri palveluun syötetään kantaverkkoyhtiö [fingridin](https://www.fingrid.fi/)-sivulta saatavat tarkat sähkökunkulutustiedot, minkä perusteella lasketaan todellinen hinta pörssisähkölle.
-
-Tämän lisäksi kannattaa vähintään käyttää led-valaisimia ja luopua pahimmista sähkösyöpöistä. Jääkaappin kulutukseen voi vaikuttaa imuroimalla ja sulattamalla pakastimen. Imurointia suositellaan myös paloturvallisuuden takia. Latteiden sähkökulutusta voi tarkkailla erillisellä pistorasiaan liitettävällä sähkönkulutusmittarilla.
-
-Aurinkopaneelit eivät kannata. Ennen aurinkopaneelien hankintaa on tärkeää harkita huolellisesti niiden taloudellista hyötyä. Aurinkopaneelit tuottavat parhaiten sähköä kesällä, jolloin sähkön hinta on yleensä alhaisempi. Talviaikaan, erityisesti iltaisin, aurinkopaneelit eivät välttämättä tuota riittävästi sähköä kattamaan tarpeita. Lisäksi, mikäli aurinkopaneelien hankintaan käytetty raha sijoitettaisiin pörssimarkkinoille, voi siitä saada suuremman hyödyn kuin aurinkopaneeleista.
-
-## Puhelinliittyma
-
-Liittymän hinnassa voi säästää kilpailuttamalla. Kilpailuttaminen onnistuu parhaiten vaihtamalla liittymän kilpailijalle, jonka jälkeen nykyinen operaattori tekee yleensä vastatarjouksen. Vastatarjouksen tekijällä on yleensä oikeus tehdä parempia tarjouksia vastatarjouksena kuin muuten.
-
-## Liikkuminen
-
-Autoa ei kannata omistaa. Auto on pahin henkilökohtaisen talouden tuhoaja. Autolla on valtavasti kuluja kuten vakuutukset, huollot, katsastukset, bensat, autopaikka, arvonalenema yms.
-
-Auton suurin meno on arvonalenema. Arvonalenema on noin 10% vuodessa ja yli 5 vuotta vanhoille autoille 7% vuodessa. Arvonalenemisen voit laskea helposti [laskurilla](https://raha.fi/auton-arvon-aleneminen-laskuri/).
-
-Koska autottomuus ei ole kaikille mahdollista kannattaa huomioida auton käyttökustannukset, hinta, kestävyys ja huoltojen kustannukset. Ennen auton hankintaa kannattaakin tutustua esimerkiksi trafin [katsastustilastoihin](https://tieto.traficom.fi/fi/tilastot/katsastustilasto). Itse ostaisin todennököisesti pienkikulutuksellisen ja edullisesti huollettavan Toyotan.
-
-Tradekan jäsen saa -15% [A-katsastuksesta](https://www.tradeka.fi/jasenedut/vuosietu/15-alennus-katsastuksesta).
-
-Jos tarvitset autoa erittäin vähän, kannattaa miettiä taksia tai vertaisvuokrauspalveluita, kuten [gomore](https://gomore.fi).
-
-Suosi pyöräilyä, se on paras ratkaisu niin taloudellisesti kuin terveydellisesti.
-
-## Asuminen
-
-Asumisessa kannattaa huomioida sivukuluja.
-
-Asunnon sijainti vaikuttaa vahvasti liikkumiseen. Jos asunto on huonolla sijainnilla pitää töihin ja kauppaa liikua pitkiä matkoja. Liikkumiseen käytettyn rahan voisi käyttää korkeampaan vuokraan keskustassa ja samalla säästää aikaa. Mieti missä on lähin ruokakauppa, jos asunnon lähellä on vain pieni ruokakauppa on siinä todennäköisesti kallista asioida.
-
-Jos olet salihirmu kannattaa huomioida taloyhtiön kuntosali kokonaiskuluissa. Omistusasuja voi hakeutua taloyhtiön hallitukseen ja järjestää kuntosalin kellariin.
-
-Kuuluuko asuntoon ilmainen netti, se säästää helposti kymppejä kuukaudessa.
-
-Ilmainen autopaikka on myös rahanarvoinen etu.
-
-Lämmityksessä kannattaa välttää kallista suorasähkölämmitystä. Suosi edullista kauko- ja maalämpöä.
-
-Velallisen omistusasujan kannattaa miettiä millä korolla lainansa ottaa. Lyhyet euriborit on ollut järjestäin pienempiä kuin koko vuoden euribor. [Kannattaako asuntolaina päivittää lyhyempään euribor-korkoon?](https://www.omavaraisuushaaste.com/kannattaako-asuntolaina-paivittaa-lyhyempaan-euribor-korkoon/)

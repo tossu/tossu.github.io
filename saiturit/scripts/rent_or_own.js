@@ -5,7 +5,6 @@ function rentOrOwnResult(price, rent, managementCharge) {
     return result + "\n\n" + `Omistusasunto kannattaa kun korko on alle ${percentage}%`;
 }
 
-
 function rentOrOwnValues() {
     const apartmentPriceElement = document.getElementById("rent-or-own-house-price");
     const rentElement = document.getElementById("rent-or-own-rent");
