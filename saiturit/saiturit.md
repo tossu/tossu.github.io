@@ -30,11 +30,11 @@ Aurinkopaneelit eivät kannata. Ennen aurinkopaneelien hankintaa on tärkeää h
 
 ## Puhelinliittymä
 
-Puhelin on välttömättömyys tänä päivänä, mutta liittymät ovat kalliita. Liittymän hinnassa voi kuitenkin säästää pitkän pennin kilpailuttamalla. Kilpailuttaminen onnistuu parhaiten vaihtamalla liittymän kilpailijalle, jonka jälkeen nykyinen operaattori tekee yleensä vastatarjouksen. Vastatarjouksen tekijällä on yleensä oikeus tehdä parempia tarjouksia vastatarjouksena kuin muuten.
+Liittymän hinnasta voi säästää pitkän pennin kilpailuttamalla. Kilpailuttaminen onnistuu parhaiten vaihtamalla liittymän kilpailijalle, jonka jälkeen nykyinen operaattori tekee yleensä vastatarjouksen. Vastatarjouksen tekijällä on yleensä oikeus tehdä parempia tarjouksia vastatarjouksena kuin muuten.
 
 ## Liikkuminen
 
-Autoa ei kannata omistaa. Auto on pahin henkilökohtaisen talouden tuhoaja. Autolla on valtavasti kuluja kuten vakuutukset, huollot, katsastukset, bensat, autopaikka, arvonalenema yms.
+Autoa ei kannata omistaa. Autolla on valtavasti kuluja kuten vakuutukset, huollot, katsastukset, bensat, autopaikka, arvonalenema yms.
 
 Auton suurin meno on arvonalenema. Arvonalenema on noin 10% vuodessa ja yli 5 vuotta vanhoille autoille 7% vuodessa. Arvonalenemisen voit laskea helposti [laskurilla](https://raha.fi/auton-arvon-aleneminen-laskuri/).
 
@@ -82,7 +82,7 @@ Osta punalaputettuja ja pakasta. Erityisen paljon punalaputettuja on pyhien kute
 
 Ruuan tilaaminen kerran viikossa saattaa olla myös halvempi ratkaisu kuin pienessä lähikaupassa asiointi. Tilaaminen pakottaa myös suunnittelemaan ostokset etukäteen.
 
-Vältä kallista lihaa. Osa kasvisproteiineista on huomattavasti lihaa halvempia, kuten soija, pavut ja linssit. Kannattaa kokeilla kasvisruokia tai jatkaa liharuokia esim pavuilla. Näin et maksaa kalliista lihasta ja saat terveellisempää ja monipuolisempaa ruokaa.
+Vältä kallista lihaa. Osa kasvisproteiineista on huomattavasti lihaa halvempia, kuten soija, pavut ja linssit. Kannattaa kokeilla kasvisruokia tai jatkaa liharuokia esim. pavuilla. Näin et maksaa kalliista lihasta ja saat terveellisempää ja monipuolisempaa ruokaa.
 
 Burger Kingin ystävien kannattaa liittyä [Tradekaan](https://www.tradeka.fi/). Tradekan pientä 33e kertaluonteista jäsenmaksua vastaan saa [Restellin yrityksistä](https://www.tradeka.fi/tradeka-yhtiot/restel-oy) -20% alennuksen.
 
@@ -196,7 +196,7 @@ Vähemmän omatoimisen kannattaa myös tarkkailla [äkkilähtöjä](https://www.
 
 Pelaaminen onnistuu halvimmillaan kun malttaa mielensä ja ei osta pelejä julkaisupäivänä.
 
-Pelejä kannattaa ostaa [Steam](https://store.steampowered.com/)-alennuksesta tai käytettynä esim divareista tai kirpputorilta. Yleensä jouluna on steam-alennukset, joten joululahjaksi kannattaa monesti antaii steam-lahjakortti.
+Pelejä kannattaa ostaa [Steam](https://store.steampowered.com/)-alennuksesta tai käytettynä esim divareista tai kirpputorilta. Yleensä jouluna on steam-alennukset, joten joululahjaksi kannattaa monesti antaa steam-lahjakortti.
 
 Lisäksi edullisia pelejä saattaa löytyä [Humble Bundlesta](https://www.humblebundle.com/).
 
