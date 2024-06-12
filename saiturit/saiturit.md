@@ -100,7 +100,7 @@ Tutustu Marttojen [kotiruokaa kolikolla oppaaseen](https://www.martat.fi/teemat/
 
 ### Verot
 
-Vaikka verot ovat kuolettavan tylsiä kannattaa niihin silti tutustua, koska hyvällä verosuunnittelulla voi säsätää paljon.
+Vaikka verot ovat kuolettavan tylsiä kannattaa niihin silti tutustua, koska hyvällä verosuunnittelulla voi säästää paljon.
 
 Toiselle ihmiselle saa antaa verovapaasti 4999euroa kolmen vuoden välein. Tämä on erittäin hyödyllinen esimerkiksi perintöä suunnittelevalle. [Kuinka paljon voi lahjoittaa verovapaasti?](https://www.vero.fi/henkiloasiakkaat/omaisuus/lahja/milloin-pit%C3%A4%C3%A4-maksaa-lahjaveroa/kuinka-paljon-voi-lahjoittaa-verovapaasti/)
 
@@ -112,6 +112,100 @@ Kannattaa myös huomioida jäännösveron (mätkyjen) korko, eli kannattaa maksa
 
 ### Sijoittaminen
 
-***HUOM! Tämä ei ole sijoitusneuvontaa, eikä kirjoittaja ole ammattilainen, jokainen tekee sijotukset omalla vastuulla.***
+***HUOM! Tämä ei ole sijoitusneuvontaa, eikä kirjoittaja ole sijoitusalan ammattilainen, jokainen tekee sijotukset omalla vastuulla. Sijoittamisessa on aina riskinsä ja voit menettää sijoitetun varallisuuden.***
 
 Sijoittaminen tuntuu monesta rakettitieteeltä, mutta sitä se ei ole.
+
+Helpoin tapa sijoittaa on ostaa indeksirahastoa. [Indeksirahasto](https://fi.wikipedia.org/wiki/Indeksirahasto) on rahasto joka seuraa vertailuindeksiä. [Vertailuindeksi](https://fi.wikipedia.org/wiki/Osakeindeksi) taas mittaa osakekurssien kehitystä. Suomessa on OMXH25 indeksi, mikä seuraa 25 isoimman suomalaisen pörssiyhtiön kehitystä. Yhdysvaltain tunnetuin indeksi on SP500, mikä seuraa 500 isoimman yhdysvaltaisen yrityksen kehitystä. Toinen iso tunnettu yhdysvaltalainen indeksi on NASDAQ100, mikä seuraa 100 isoimman teknologia firman kehitystä.
+
+Ostamalla indeksirahastoa ostat siis sitä mitä indeksi seuraa, eli esimerkiksi OMXH25 tapauksessa 25:tä isointa suomalaista pörssiyhtiötä. Tämä tarkoittaa että säästösi on hyvin hajautettuna, mutta hajauttaa kannattaa myös ajallisesti.
+
+Ajallisella hajauttamisella tarkoitetaan ostojen jakamista useampaan kertaa ja pisemmälle aikavälille kuin ostamalla kaikki kertaostona. Ajallisella hajauttamisella pyritään välttämään mahdollinen kurssien heilahtelu heti oston jälkeen, eli vähentää riskiä. [Kannattaako ajallinen hajoittaminen?](https://www.sijoittaja.fi/85153/sijoittaja-fi-tutki-kannattaako-ajallinen-hajauttaminen/)
+
+Yhdysvaltain SP500 indeksi on [tuottanut](https://www.investopedia.com/ask/answers/042415/what-average-annual-return-sp-500.asp) noin 10% vuodessa, vuodesta 1957 vuoteen 2023. Sijoittamisessa kuitenkin pitää huomioida että 10% tuotto on vain laskennallinen. Todellisuudessa indeksi saattaa heilua negatiivisen ja positiivisen tuottojen väliä vuosittain, riippuen vuodesta ja kriiseistä, mutta pitkässä juoksussa vuosituotoksi saadaan noin 10%.
+
+Jos indeksi tuottaa 10% se ei ole kuitenkaan reaalituottoa. Reaalituotolla tarkoitetaan tuottoa, joka jää [inflaation](https://fi.wikipedia.org/wiki/Inflaatio) jälkeen. On siis järkevää vähentää noin 2% inflaatio tuotosta jos laskee mahdollisia voittoja. SP500 tapauksessa saadaan siis noin 8% reaalituotto.
+
+SP500 indeksin 8% reaalituotto tuottaa 10 vuoden aikana 1.08^10 = 2.15, eli tuplaat rahasi joka kymmenes vuosi. Voit laskea [Nordnetin laskurilla](https://www.nordnet.fi/fi/palvelut/kuukausisaastaminen/sijoituslaskuri) kuinka paljon voisit tehdä voittoa 8% reaalituotolla.
+
+Parhaan mahdollisen tuoton saamiseksi pitää kuitenkin vielä huomioida rahastojen kulut ja verotus. Kulut saa pidettyä maltillisena kuin ostaa ETF-indeksrihastoa. Verot taas saa pidettyä pienenä kun ostaa indeksirahastoa, joka uudelleen investoi osingot rahastoon, eli ostaa kasvurahastoa (acc nimessä, eli Accumulating). Tällöin maksat veroja vain voitoista. Lisäksi kannattaa huomioida että ETF on rakenteeltaan fyysinen, eli se oikeasti ostaa osakkeita, eikä esimerkiksi johdannaisia.
+
+Itse sijoitan pääsääntöisesti SP500 indeksiin, eli "[iShares Core S&P 500 UCITS ETF" (ISIN IE00B5BMR087)](https://www.ishares.com/uk/individual/en/products/253743/ishares-sp-500-b-ucits-etf-acc-fund) ja NASDAQ100 indeksiin "[iShares NASDAQ 100 UCITS ETF" (ISIN IE00B53SZB19)](https://www.ishares.com/uk/individual/en/products/253741/ishares-nasdaq-100-ucits-etf). ISIN on rahaston tunnistekoodi.
+
+ETF indeksrahastojen lisäksi voi käyttää pankkien omia ja edullisia rahastoja. Tälläinen on esimerkiksi [OP-Amerikka](https://www.op.fi/henkiloasiakkaat/saastot-ja-sijoitukset/rahastot/kaikki-rahastot/op-amerikka-indeksi).
+
+### Hankintameno-olettama
+
+Hankinta-olettama on vaihtoehtoinen tapa laskea voitosta maksettava vero. Normaalisti voitosta maksetaan veroa 30% ja 30 000e ylittävältä osalta 34% prosenttia. Hankintahinta-olettamassa lasketaan hankintahinta myyntihinnasta prosenttiosuudella, niin että hankintahinta on 20% myynthinnasta, jos osake on ollut alle 10v hallussa ja 40% myynthinnasta, jos osake on ollut yli 10v hallussa. 
+
+```Sijoittaja on ostanut osakkeet yli 10 vuotta sitten 5000 eurolla ja myynyt osakkeet yli 10 vuoden jälkeen 25 000 eurolla. Jos sijoittaja laskee myyntivoiton hankintahinnasta, on pääomatulo 20 000 euroa, ja sijoittaja maksaa tästä luovutusvoittoveroa 6000 euroa (30% * 20000). Tässä tilanteessa sijoittajan kannattaa kuitenkin hyödyntää hankintameno-olettamaa. Tällöin verotettava pääomatulo on 15 000 euroa (25000 – 40% * 25000). Eli pääomatuloa sijoittaja maksaa tällöin 4500 euroa.```
+
+Esimerkin [lähde](https://www.salkunrakentaja.fi/2013/09/nin-hydynnt-hankintameno-olettamaa-myyntivoitoissa/).
+
+### Osakesäästötili
+
+"Osakesäästötilin sisällä voit ostaa ja myydä pörssiosakkeita niin, ettei sinun tarvitse maksaa veroa yksittäisistä myynneistä. Myöskään osinkoja ja korkotuloja ei veroteta vielä siinä vaiheessa, kun ne tulevat osakesäästötilille. Osakesäästötilin tuotto verotetaan vasta silloin, kun nostat sieltä rahaa." [Lähde](https://www.vero.fi/henkiloasiakkaat/omaisuus/sijoitukset/osakes%C3%A4%C3%A4st%C3%B6tili/).
+
+Osakesäästötili ei ole paras ratkaisu. Sijoitusten pitää olla erittäin pitkäaikaisia että osakesäästötilin veroetu voittaa hankintameno-olettaman. Hankintameno-olettamaa ei voi siis käyttää osakesäästötilin kanssa.
+
+### Minimalismi
+
+Minimalismi on elämäntapa, jossa pyritään luomaan järjestystä kaaoksen keskelle vähentämällä tavaran määrää, sillä vähemmän on enemmän. Monet ottavat inspiraatiota omaan minimalismiinsa japanilaisen kirjailijan [Marie Kondōn](https://fi.wikipedia.org/wiki/Marie_Kond%C5%8D) teoksesta "KonMari: Siivouksen elämänmullistava taika". Teoksen keskeinen ajatus on luopua merkityksettömistä esineistä ja tavoitella selkeyttä elämään. Tämä elämäntapa sopii erityisen hyvin saiturille.
+
+Luovu ylimääräisistä esineistä tai myy ne eteenpäin kirpputorilla. Harkitse tarkasti ennen kuin hankit asioita, onko se todella sellainen mitä tulet käyttämään jatkossa. 
+
+### Budjetointi
+
+Säästämisen yksi tärkeimmistä asioista on budjetointi ja menojen kirjaus. Ilman menojen kirjaamista on todella vaikea hahmottaa todellisia kulujaan. Monella on pahana tapana tehdä pieniä mielitekoja, jotka sitten kasaantuvat isoksi kuluksi. Pienissä mieluhaluissa ei sinällään ole mitään pahaa kunhan tiedostaa kuinka paljon niihin käyttää ja se pysyy järkevissä rajoissa, eli budjetissa. 
+
+Menojen seurannan tarkoitus on hahmottaa kuluttamisen kipupisteet. Kuinka paljon käytän rahaa, mihin raha menee, mikä on tärkeeää kuluttamista, miten voisin vähentää kuluttamista jne.
+
+Budjetin tärkein oivallus on hahmottaa mihin haluaa rahansa oikeasti käyttää. Mikä on sinulle tärkeää? Pienet mielihalut vai ulkomaanmatka? Budjettia on myös tärkeätä seurata että siinä pysyy. Lisäksi on hyvä tarkistella budjettia, missä onnistuin, missä pitää parantaa? 
+
+### Ennakointi
+
+Ennakointi toimii muuallakin kuin ruuanlaitossa.
+
+Yllättäviin menoihin kannattaa varautua puskurilla. Yllättävie menoja voi olla esimerkiksi kännykän tai auton hajoaminen. Puskurin kooksi suositellaan yleensä noin kahden tai kolmen kuukauden palkkaa. Tällöin et joudu esimerkiksi ottamaan kallista lainaa tai osamaksua uutta kännykkää varten. Ja ennen kaikkea puskuri antaa mielenrauhaa ja vähentää stressiä. 
+
+Toinen tapa ennakoida on ostaa kulutustavaroita alennuksesta varastoon. Vararasto kannattaa kuitenkin pitää pienenä ettei asiat vanhene hyllyyn ja ostaa vain sellaisia asioita mitkä menevät varmasti käyttöön. 
+
+### Tarjouspäivät
+
+Isoimmat hankinnat kannattaa keskittää isojen tarjouspäivien ajalle, mutta kannattaa olla tarkkana hinnan kanssa. Kaupat monesti nostavat hintoja ennen tarjouspäiviä ja sitten myyvät tuotteita normaaliin tai korkeampaan hintaan, mutta "alennuksena". Tuotteiden hintahistoriaa voi tarkastella [Hintaoppaasta](https://hintaopas.fi/).
+
+Tarjouspäiviä ovat [Black Friday](https://fi.wikipedia.org/wiki/Black_Friday), [Cyber Monday](https://fi.wikipedia.org/wiki/Cyber_Monday), Amazon Prime Day, [Hullut Päivät](https://fi.wikipedia.org/wiki/Cyber_Monday), [Sokos 3+1 päivää](https://www.sokos.fi/kategoria/3-1-paivaa), Asiakasomistajapäivät yms.
+
+### Matkustaminen
+
+Matkustamisen ei tarvise olla kallista, mutta silloin pitää olla myös omatoimisempi.
+
+Lennot ja hotellit kannattaa etsiä hakukoneilla kuten: [skyscanner](https://www.skyscanner.fi/) tai [trivago](https://www.trivago.fi/).
+
+Edullista majoitusta haluavan kannattaa tarkistaa [airbnb](https://www.airbnb.fi/) ja [hostellit](https://www.hostelworld.com/).
+
+Ennakoimalla matkan etukäteen voi hyödyntää tarjouspäiviä, kuten black fridayta.
+
+[Interrail](https://www.vr.fi/junaliput/interrail)-lippu on erittäin edullinen tapa matkustaa ympäri Eurooppaa.
+
+Vähemmän omatoimisen kannattaa myös tarkkailla [äkkilähtöjä](https://www.aurinkomatkat.fi/akkilahdot).
+
+[Norwegianin](https://www.banknorwegian.fi/luottokortti/cashpoints/) ja [Finnairin](https://www.finnair.com/fi-fi/finnair-plus/finnair-visa-luottokortti) luottokorteilla voi myös kerätä tavallisista ostoksista lentopisteitä.
+
+### Pelit
+
+Pelaaminen onnistuu halvimmillaan kun malttaa mielensä ja ei osta pelejä julkaisupäivänä.
+
+Pelejä kannattaa ostaa [Steam](https://store.steampowered.com/)-alennuksesta tai käytettynä esim divareista tai kirpputorilta. Yleensä jouluna on steam-alennukset, joten joululahjaksi kannattaa monesti antaii steam-lahjakortti.
+
+Lisäksi edullisia pelejä saattaa löytyä [Humble Bundlesta](https://www.humblebundle.com/).
+
+### Lemmikit
+
+Älä ota lemmikkiä. Moni ei ajattele lemmikkiä hankkiessaan kustannuksia. Lemmikki maksaa kuitenkin helposti yli 500e vuodessa. Lemmikin ylläpitoo kuuluu niin ruuat, hiekat, rokotukset, sterilisaatio ja muut eläinlääkäri kulut. 
+
+### Hygienia
+
+Moni käyttää parranajoon kalliita tuotteita, mutta tuolle on vaihtoetho. Parranajo onnistuu edullisesti [safety razorilla](https://en.wikipedia.org/wiki/Safety_razor) tai [partaveitsellä](https://fi.wikipedia.org/wiki/Partaveitsi).
+
+Leikkaamalla hiukset itse voi säästää myös pitkän pennin.
