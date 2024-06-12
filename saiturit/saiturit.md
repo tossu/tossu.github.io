@@ -60,9 +60,7 @@ Ilmainen autopaikka on myös rahanarvoinen etu.
 
 Lämmityksessä kannattaa välttää kallista suorasähkölämmitystä. Suosi edullista kauko- ja maalämpöä.
 
-Velallisen omistusasujan kannattaa miettiä millä korolla lainansa ottaa. Lyhyet euriborit on ollut järjestäin pienempiä kuin koko vuoden euribor. [Kannattaako asuntolaina päivittää lyhyempään euribor-korkoon?](https://www.omavaraisuushaaste.com/kannattaako-asuntolaina-paivittaa-lyhyempaan-euribor-korkoon/)
-
-### Omistuasunto
+#### Omistuasunto
 
 Asuntoa ei kannata koskaan omistaa kokonaan. Jos omistat asunnon kokonaan on sinulla sidottuna valtavasti pääomia asuntoon. Tällöin taas menetät valtavat määrät pääomia jotka saisit sijoittamalla nuo pääomat. 
 
@@ -71,6 +69,8 @@ Asuntoa ei kannata koskaan omistaa kokonaan. Jos omistat asunnon kokonaan on sin
 Omistusasuminen on silloin järkevää kun se tulee vuokraa edullisemmaksi, eli kun korkoja maksetaan vähemmän kuin vuokra-isännälle. Tämä taas tarkoittaa isoa vuokraa tai pientä korkoa. 
 
 Ideaali tilanne on pienellä korolla ja mahdollisimman pitkällä laina-ajalla oleva asuntolaina.
+
+Velallisen omistusasujan kannattaa miettiä millä korolla lainansa ottaa. Lyhyet euriborit on ollut järjestäin pienempiä kuin koko vuoden euribor. [Kannattaako asuntolaina päivittää lyhyempään euribor-korkoon?](https://www.omavaraisuushaaste.com/kannattaako-asuntolaina-paivittaa-lyhyempaan-euribor-korkoon/)
 
 ### Ruoka
 
