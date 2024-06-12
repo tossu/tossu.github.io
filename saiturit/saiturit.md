@@ -140,7 +140,7 @@ Hankinta-olettama on vaihtoehtoinen tapa laskea voitosta maksettava vero. Normaa
 
 ```Sijoittaja on ostanut osakkeet yli 10 vuotta sitten 5000 eurolla ja myynyt osakkeet yli 10 vuoden jälkeen 25 000 eurolla. Jos sijoittaja laskee myyntivoiton hankintahinnasta, on pääomatulo 20 000 euroa, ja sijoittaja maksaa tästä luovutusvoittoveroa 6000 euroa (30% * 20000). Tässä tilanteessa sijoittajan kannattaa kuitenkin hyödyntää hankintameno-olettamaa. Tällöin verotettava pääomatulo on 15 000 euroa (25000 – 40% * 25000). Eli pääomatuloa sijoittaja maksaa tällöin 4500 euroa.```
 
-Esimerkin [lähde](https://www.salkunrakentaja.fi/2013/09/nin-hydynnt-hankintameno-olettamaa-myyntivoitoissa/).
+[Esimerkin lähde](https://www.salkunrakentaja.fi/2013/09/nin-hydynnt-hankintameno-olettamaa-myyntivoitoissa/).
 
 #### Osakesäästötili
 
