@@ -1,3 +1,8 @@
+# Saiturin Käsikirja
+
+Tämän käsikirjan tavoitteena on auttaa ihmisiä säästämään ja kasvattamaan varallisuuttaan. Lukijoiden odotetaan soveltavan ohjeita omien tarpeiden, arvojen ja vakaumuksen mukaisesti.
+
+**TLDR; Eroa kirkosta ja ammattiliitosta, tee ruuat itse, kilpailuta liittymät ja hyödynnä veroedut. Sijoita saadut säästöt kustannustetehokkaasti indeksrirahastoihin. Vaurastu.**
 
 - [Kirkollisvero](#kirkollisvero)
 - [Ammattiliitto](#ammattiliitto)
@@ -19,11 +24,6 @@
 - [Pelit](#pelit)
 - [Lemmikit](#lemmikit)
 - [Hygienia](#hygienia)
-
-
-Tämän käsikirjan tavoitteena on auttaa ihmisiä säästämään ja kasvattamaan varallisuuttaan. Lukijoiden odotetaan soveltavan ohjeita omien tarpeiden, arvojen ja vakaumuksen mukaisesti.
-
-**TLDR; Eroa kirkosta ja ammattiliitosta, tee ruuat itse, kilpailuta liittymät ja hyödynnä veroedut. Sijoita saadut säästöt kustannustetehokkaasti indeksrirahastoihin. Vaurastu.**
 
 ### Kirkollisvero
 
