@@ -227,6 +227,6 @@ Lisäksi edullisia pelejä saattaa löytyä [Humble Bundlesta](https://www.humbl
 
 ## Hygienia
 
-Moni käyttää parranajoon kalliita tuotteita, mutta tuolle on vaihtoehto. Parranajo onnistuu edullisesti [safety razorilla](https://en.wikipedia.org/wiki/Safety_razor) tai [partaveitsellä](https://fi.wikipedia.org/wiki/Partaveitsi). Safety razorin vaihdettavat terät ovat muutaman sentin luokkaa Amazonissa.
+Moni käyttää parranajoon kalliita tuotteita, mutta tuolle on vaihtoehto. Parranajo onnistuu edullisesti [safety razorilla](https://en.wikipedia.org/wiki/Safety_razor) tai [partaveitsellä](https://fi.wikipedia.org/wiki/Partaveitsi). Safety razorin vaihdettavat terät ovat muutaman sentin Amazonissa.
 
 Leikkaamalla hiukset itse säästää myös helposti 200e vuodessa.
