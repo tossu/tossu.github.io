@@ -47,13 +47,11 @@ Ensiksi kannattaa selvittää oma sähkönkulutus, tämä onnistuu helposti säh
 
 Jos pörssisähköön siirtyminen askarruttaa, kannattaa pörssisähkön hinta selvittää edelliseltä vuodelta [liukuri](https://liukuri.fi/)-palvelussa. Liukuri palveluun syötetään kantaverkkoyhtiö [fingridin](https://www.fingrid.fi/)-sivulta saatavat tarkat sähkökunkulutustiedot, minkä perusteella lasketaan todellinen hinta pörssisähkölle.
 
-Tämän lisäksi kannattaa vähintään käyttää led-valaisimia ja luopua pahimmista sähkösyöpöistä. Jääkaappin kulutukseen voi vaikuttaa imuroimalla ja sulattamalla pakastimen. Imurointia suositellaan myös paloturvallisuuden takia. Latteiden sähkökulutusta voi tarkkailla erillisellä pistorasiaan liitettävällä sähkönkulutusmittarilla. 
-
-Aurinkopaneelit eivät kannata. Ennen aurinkopaneelien hankintaa on tärkeää harkita huolellisesti niiden taloudellista hyötyä. Aurinkopaneelit tuottavat parhaiten sähköä kesällä, jolloin sähkön hinta on yleensä alhaisempi. Talviaikaan, erityisesti iltaisin, aurinkopaneelit eivät välttämättä tuota riittävästi sähköä kattamaan tarpeita. Lisäksi, mikäli aurinkopaneelien hankintaan käytetty raha sijoitettaisiin pörssimarkkinoille, voi siitä saada suuremman hyödyn kuin aurinkopaneeleista.
+Tämän lisäksi kannattaa vähintään käyttää led-valaisimia ja luopua pahimmista sähkösyöpöistä. Jääkaappin kulutukseen voi vaikuttaa imuroimalla ja sulattamalla pakastimen. Imurointia suositellaan myös paloturvallisuuden takia. Latteiden sähkökulutusta voi tarkkailla erillisellä pistorasiaan liitettävällä sähkönkulutusmittarilla.
 
 ## Puhelinliittymä
 
-Liittymän hinnasta voi säästää pitkän pennin kilpailuttamalla. Kilpailuttaminen onnistuu parhaiten vaihtamalla liittymän kilpailijalle, jonka jälkeen nykyinen operaattori tekee yleensä vastatarjouksen. Vastatarjouksen tekijällä on yleensä oikeus tehdä parempia tarjouksia vastatarjouksena kuin muuten.
+Puhelinliittymän hinnasta voi säästää kilpailuttamalla. Kilpailuttaminen onnistuu parhaiten vaihtamalla liittymän kilpailijalle, jonka jälkeen nykyinen operaattori tekee yleensä vastatarjouksen. Vastatarjouksen tekijällä on yleensä oikeus tehdä parempia tarjouksia kuin muuten.
 
 ## Liikkuminen
 
@@ -85,7 +83,7 @@ Lämmityksessä kannattaa välttää kallista suorasähkölämmitystä. Suosi ed
 
 #### Omistuasunto
 
-Asuntoa ei kannata koskaan omistaa kokonaan. Jos omistat asunnon kokonaan on sinulla sidottuna valtavasti pääomia asuntoon. Tällöin taas menetät valtavat määrät pääomia jotka saisit sijoittamalla nuo pääomat. 
+Asuntoa ei kannata koskaan omistaa kokonaan. Jos omistat asunnon kokonaan on sinulla sidottuna valtavasti varallisuutta asuntoon. Tällöin taas menetät valtavat tuloja jotka saisit sijoittamalla nuo asuntoon sidotut varat. 
 
 ```Esimerksi 150k euron asunto sijoitettuna tuottaisi 8% vuosituotolla 12k euroa. Tällä summalla asuisi vuokralla jo todella kivasti.```
 
