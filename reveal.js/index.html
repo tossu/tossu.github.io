@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h2 data-id="code-title">Javascript</h2> on paras</section>
+
+				<section data-auto-animate>
+					<h4 data-id="code-title">Mikä tämän arvo on?</h4>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim>
+						"b" + "a" + +"a" + "a";
+					</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Banana 🍌🍌🍌, Miksi?</h4>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+						"b" + "a" + +"a" + "a"; // -> 'baNaNa'
+					</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Banana 🍌🍌🍌, koska</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							"b" + "a" + (+"a") + "a"; // ( + "a") -> NaN
+						</script></code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h4 data-id="code-title">Not-A-Number</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							NaN === NaN;
+							typeof NaN;
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Not-A-Number</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							NaN === NaN; // -> false
+							typeof NaN; // -> 'number'
+						</script></code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h4 data-id="code-title">No mites tämä?</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							1 < 2 < 3;
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Oikein, toivottavasti..</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							1 < 2 < 3; // -> true
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Entäs tämä on?</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							3 > 2 > 1;
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Hupsista.. mutta miksi?</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							3 > 2 > 1; // -> false
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">1 > 1</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							1 < 2 < 3; // 1 < 2 -> true
+							true < 3; // true -> 1
+							1 < 3; // -> true
+							
+							3 > 2 > 1; // 3 > 2 -> true
+							true > 1; // true -> 1
+							1 > 1; // -> false
+						</script></code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h4 data-id="code-title">Ehkä jotain hyödyllisempää?</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							parseInt(0.000001);
+							parseInt(0.0000001);
+							parseInt(1 / 1999999);
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Mutta, Miksi?</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							parseInt(0.000001); // -> 0
+							parseInt(0.0000001); // -> 1
+							parseInt(1 / 1999999); // -> 5
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Mutta, Miksi?</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							// parseInt() muuttaa luvun merkkijonoksi
+							parseInt({ toString: () => 2, valueOf: () => 1 }); // -> 2
+
+							parseInt(0.000001); // -> "0.000001" -> 0
+							parseInt(0.0000001); // -> "1e-7" -> 1
+							parseInt(1 / 1999999); // -> "5.00000250000125e-7" -> 5
+						</script></code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h4 data-id="code-title">Kenelläkään pitkä matikka?</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							0.1 + 0.2;
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Kenelläkään pitkä matikka?</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							0.1 + 0.2; // -> 0.30000000000000004
+
+							// Liukuluku matematiikkaa, rikki muissakin kielissä
+
+						</script>
+					</code>
+
+					</pre>
+					<a href="https://0.30000000000000004.com/">https://0.30000000000000004.com</a>
+				</section>
+
+				<section data-auto-animate>
+					<h4 data-id="code-title">Try catch</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							(() => {
+								try {
+									return 2;
+								} finally {
+									return 3;
+								}
+							})();
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Try catch</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							(() => {
+								try {
+									return 2;
+								} finally {
+									return 3;
+								}
+							})(); // -> 3
+						</script></code></pre>
+				</section>
+
+				<section data-auto-animate>
+					<h4 data-id="code-title">Math Min Max</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							Math.min() > Math.max();
+							Math.min() < Math.max();
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Math Min Max</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							Math.min() > Math.max(); // -> true
+							Math.min() < Math.max(); // -> false
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Selitys</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							Math.min() > Math.max(); // -> true
+							Math.min() < Math.max(); // -> false
+
+							Math.min(); // -> Infinity
+							Math.max(); // -> -Infinity
+							Infinity > -Infinity; // -> true
+
+							Math.min() > Math.max(); // Infinity > -Infinity -> true
+							Math.min() < Math.max(); // Infinity < -Infinity -> false
+						</script></code></pre>
+				</section>
+
+
+				<section data-auto-animate>
+					<h4 data-id="code-title">Constructor!</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							// ihan tavallinen stringi
+							const c = "constructor";
+
+							// mutta mikä tämä on?
+							c[c];
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Constructor!</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							// ihan tavallinen stringi
+							const c = "constructor";
+
+							// se on stringin constructor 
+							c[c]; // -> [Function: String]
+
+							// no mikä tämä on?
+							c[c][c];
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Constructor!</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							// ihan tavallinen stringi
+							const c = "constructor";
+
+							// se on stringin constructor 
+							c[c]; // -> [Function: String]
+
+							// se on constructor of constructor
+							c[c][c]; // -> [Function: Function]
+
+							// mitä sillä voi tehdä?
+						</script></code></pre>
+				</section>
+				<section data-auto-animate>
+					<h4 data-id="code-title">Constructor!</h4>
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim><script type="text/template">
+							// ihan tavallinen stringi
+							const c = "constructor";
+
+							// se on stringin constructor 
+							c[c]; // -> [Function: String]
+
+							// se on constructor of constructor
+							c[c][c]; // -> [Function: Function]
+
+							// tehdään anonyymi funktio
+							c[c][c]('console.log("SEPPO")'); // -> [Function: anonymous]
+
+							// ja kutsutaan sitä
+							c[c][c]('console.log("SEPPO")')(); // -> SEPPO?
+						</script></code></pre>
+				</section>
+
+				<section data-auto-animate>
+						<a href="https://github.com/denysdovhan/wtfjs">https://github.com/denysdovhan/wtfjs</a>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
