@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h2 data-id="code-title">ArangoDB</h2><small>wow such database</small></section>
+
+<!----------->
+
+<section>
+
+<h3>Perus hommat</h3>
+
+<pre><code data-trim data-noescape>
+FOR u IN Users
+  FILTER u.city == "Helsinki"
+  RETURN u
+</code></pre>
+
+<pre><code data-trim data-noescape>
+INSERT { name: "Alice", age: 29 } INTO Users
+RETURN NEW
+</code></pre>
+
+
+<pre><code data-trim data-noescape>
+UPDATE { _key: "12345" } WITH { age: 30 } IN Users
+RETURN NEW
+</code></pre>
+
+<pre><code data-trim data-noescape>
+REPLACE { _key: "12345", name: "Alice", age: 30 } IN Users
+RETURN NEW
+</code></pre>
+
+<pre><code data-trim data-noescape>
+REMOVE { _key: "12345" } IN Users
+</code></pre>
+
+</section>
+
+
+<!----------->
+
+<section>LIMIT (pagination?)
+
+<pre><code data-trim data-noescape>
+	FOR u IN Users
+  LIMIT 5
+  RETURN u
+</code></pre>
+
+<pre><code data-trim data-noescape>
+	FOR u IN Users
+  LIMIT 5,10 // skip 5, take 10
+  RETURN u
+</code></pre>
+
+</section>
+
+
+<!----------->
+
+				<section><h3>WOW TRAVERSE</h3>
+				
+<pre><code data-trim data-noescape>
+FOR node[, edge[, path]]
+  IN [min[..max]]
+  OUTBOUND|INBOUND|ANY startNode
+  GRAPH graphName
+  [PRUNE [pruneVariable = ]pruneCondition]
+  [OPTIONS options]
+</code></pre>
+
+<pre><code data-trim data-noescape>
+
+[WITH nodeCollection1[, nodeCollection2[, nodeCollectionN]]]
+FOR node[, edge[, path]]
+  IN [min[..max]]
+  OUTBOUND|INBOUND|ANY startNode
+  edgeCollection1[, edgeCollection2[, edgeCollectionN]]
+  [PRUNE [pruneVariable = ] pruneCondition]
+  [OPTIONS options]
+</code></pre>
+
+</section>
+
+<!----------->
+
+<section>
+	
+	<h3>Traverse options - Order</h3>
+<pre><code data-trim data-noescape>
+	OPTIONS { order: "bfs" }
+</code></pre>
+	
+	<p>Specify which traversal algorithm to use (string):</p>
+
+	<ul>
+    <li>"bfs" – menee kerros kerrokselta</li>
+    <li>"dfs" (default) – menee yhdessä linjassa syvälle asti</li>
+    <li>"weighted" - menee edgejen paninon mukaan</li>
+	</ul>
+				
+</section>
+
+<section>
+	
+	<h3>Traverse options</h3>
+	
+	<ul>
+		<li>uniqueVertices - ei duplikaatti nodeja</li>
+		<li>uniqueEdges - ei duplikaatti edgejä</li>
+		<li>parallelism - voidaan mennä useampaa polkua, useampi threadi</li>
+	</ul>
+				
+</section>
+
+<!----------->
+
+<section>
+
+	<h3>Traverse Prune</h3>
+	
+	<p>Lopettaa polun seuraamisen jos ehto täyttyy</p>
+
+	<pre><code data-trim data-noescape>
+		FOR v, e, p IN 1..5 OUTBOUND "Users/Alice" GRAPH "social"
+  PRUNE v.status == "inactive"
+  RETURN v</p>
+	</code></pre>
+
+</section>
+
+<!----------->
+
+<section>
+	<h3>Shortest path</h3>
+
+	<pre><code data-trim data-noescape>
+		FOR node[, edge]
+  IN OUTBOUND|INBOUND|ANY SHORTEST_PATH
+  startNode TO endNode
+  edgeCollection1, ..., edgeCollectionN
+  [OPTIONS options]
+	</code></pre>
+
+	<p>Paluttaa lyhyimmän reitin startNoden ja endNoden välillä, voi olla eri edgejä välissä.</p>
+
+</section>
+
+<!----------->
+
+<section>
+	
+<h3>Fulltext search - Tokens</h3>
+
+<p>Token search: The tokens can occur in any order. The words you search for merely need to be contained in the source string somehow.</p>
+
+<pre><code data-trim data-noescape>
+	FOR doc IN imdb_alias
+  SEARCH doc.description IN TOKENS("dinosaur park", "text_en")
+  RETURN {
+    title: doc.title,
+    description: doc.description
+  }
+</code></pre>
+
+	https://docs.arangodb.com/stable/index-and-search/arangosearch/full-text-token-search/
+
+
+</section>
+
+<section>
+
+<h3>Fulltext search - Phrase</h3>
+
+<p>Phrase search: The order of the tokens needs to match the query. This allows you to search for partial or full sentences.</p>
+
+<p>Match movies that contain the phrase epic "something" film in their description, where "something" can be exactly one arbitrary token:</p>
+
+<pre><code data-trim data-noescape>
+	FOR doc IN imdb_alias
+	SEARCH PHRASE(doc.description, "epic ? film", "text_en")
+	RETURN {
+		title: doc.title,
+		description: doc.description
+	}
+</code></pre>
+
+https://docs.arangodb.com/stable/index-and-search/arangosearch/phrase-and-proximity-search/
+
+</section>
+
+</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
