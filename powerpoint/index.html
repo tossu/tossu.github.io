@@ -1,20 +1,39 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/solarized.css" />
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section><h2>Slide 1</h2></section>
-				<section><h2>Slide 2</h2></section>
-			</div>
-		</div>
+  <head>
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/solarized.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section><h2>Slide 1</h2></section>
+        <section><h2>Slide 2</h2></section>
+        <section>
+          <pre><code data-line-numbers="3,8-10">
+<table>
+  <tr>
+    <td>Apples</td>
+    <td>$1</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Oranges</td>
+    <td>$2</td>
+    <td>18</td>
+  </tr>
+</table>
+</code></pre>
+        </section>
+      </div>
+    </div>
 
-		<script src="js/reveal.js"></script>
-		<script>
-			Reveal.initialize();
-		</script>
-	</body>
+    <script src="js/reveal.js"></script>
+    <script src="js/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        plugins: [RevealHighlight],
+      });
+    </script>
+  </body>
 </html>
