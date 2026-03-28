@@ -23,13 +23,13 @@ Luonti, tuhoaminen, proxyt, transaktiot jne.
 
 ## Elinkaari (@scope)
 
-`singleton` - yksi instanssi (default)
+<small>`singleton` - yksi instanssi (default)</small>
 
-`prototype` - yksi instanssi per käyttö (injection), eli uusi instanssi joka kerta kun ladataan
+<small>`prototype` - yksi instanssi per käyttö (injection), eli uusi instanssi joka kerta kun ladataan</small>
 
-`request` - yksi instanssi per HTTP-pyyntö (web apps)
+<small>`request` - yksi instanssi per HTTP-pyyntö (web apps)</small>
 
-`session` - yksi instanssi per HTTP-session
+<small>`session` - yksi instanssi per HTTP-session</small>
 
 ---
 
