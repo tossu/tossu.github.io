@@ -1,251 +1,33 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
+    <title></title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-
-    <title>reveal.js</title>
-
-    <link rel="stylesheet" href="dist/reset.css" />
-    <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" />
-
-    <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/solarized.css" />
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>
-          <h2 data-id="code-title">Spring</h2>
-        </section>
-
-        <section>
-          <h3>Mikä on papu? 🫘</h3>
-          Bean on mikä tahansa Java-olio, jota Spring hallinnoi. Jos Spring luo
-          sen, injektoi sen ja hallitsee sen elinkaarta, kyseessä on papu.
-        </section>
-
-        <section>
-          <h3>Pavun elämäntehtävä</h3>
-          <pre><strong>Riippuvuuksien injektointi (Dependency Injection)</strong>
-Spring rakentaa olioverkon puolestasi. (@Autowired)</pre>
-
-          <pre><strong>Väljä kytkentä (Loose coupling)</strong>
-Luokat riippuvat rajapinnoista, eivät konkreettisista toteutuksista.
-Tehdään yksi asia ja pyritään välttämään suoraa riippuvuutta.</pre>
-
-          <pre><strong>Keskitetty elinkaaren hallinta</strong>
-Luonti, tuhoaminen, proxyt, transaktiot jne.</pre>
-        </section>
-
-        <section>
-          <h3>Elinkaari (@scope)</h3>
-          <pre>singleton - yksi instanssi (default)</pre>
-          <pre>
-prototype - yksi instanssi per käyttö (injection), 
-            eli uusi instanssi joka kerta kun ladataan</pre
-          >
-          <pre>request - yksi instanssi per HTTP-pyyntö (web apps)</pre>
-          <pre>session - yksi instanssi per HTTP-session</pre>
-        </section>
-
-        <section>
-          <h3>Perus annotaatiot</h3>
-
-<pre>
-<code>@Component</code>
-Merkitsee luokan Spring-hallinnoiduksi paavuksi.
-</pre>
-
-<pre>
-<code>@Service</code>
-Sama kuin @Component, mutta semanttisesti liiketoimintalogiikalle.
-</pre>
-
-<pre>
-<code>@Repository</code>
-Sama idea, datakäyttökerroksia varten. Mahdollistaa myös poikkeuksien käännöksen.
-</pre>
-
-<pre>
-<code>@Autowired</code>
-Injektoi riippuvuudet tyypin mukaan.
-</pre>
-
-<pre>
-<code>@Qualifier("beanName")</code>
-Selventää, mikä papu tulee injektoida.
-</pre>
-
-<pre>
-<code>@Value("${property.name}")</code>
-Injektoi arvot konfiguraatiosta.
-</pre>
-        </section>
-
-        <section>
-          <h3>Perus annotaatiot</h3>
-
-<pre>
-<code>@Configuration</code>
-Merkitsee luokkaa bean-määritysten lähteeksi.
-</pre>
-
-<pre>
-<code>@Bean</code>
-Määrittelee beanin.
-</pre>
-
-<pre>
-<code>@Profile("dev")</code>
-Lataa beanit vain tietyille ympäristöille.
-</pre>
-
-<pre>
-<code>@Primary</code>
-Tekee beaanista oletusvalinnan, kun useita kandidaatteja on.
-</pre>
-        </section>
-
-        <section>
-          <h3>Perus annotaatiot</h3>
-
-          <pre>
-<code>@RestController</code>
-Kontrolleri, jossa metodit palauttavat JSONia/XML:ää suoraan, eli API -endpointit.
-</pre>
-
-          <pre>
-<code>@Controller</code>
-MVC-kontrolleri näkymille (HTML-mallipohjat).
-</pre>
-
-          <pre>
-<code>@RequestMapping("/api")</code>
-Peruspolun määrittely.
-</pre>
-
-          <pre>
-<code>@GetMapping, @PostMapping, @PutMapping, @DeleteMapping</code>
-HTTP-metodikohtaiset kartoittajat.
-</pre>
-
-          <pre>
-<code>@RequestParam, @PathVariable, @RequestBody</code>
-Sidokset pyynnön tietoihin metodiparametreilla.
-</pre>
-
-          <pre>
-<code>@MockBean</code>
-Injektoi mokkeja Spring-kontekstiin.
-</pre>
-        </section>
-
-        <section>
-          <h3>Luonti</h3>
-
-          <pre>
-						<code>
-  @Component
-  class MyComponent {}
-					</code>
-				</pre>
-
-          <pre><code>
-  @Configuration
-  @Profile("dev")
-  class DevConfig {
-
-      @Value("${app.greeting}")
-      private String greeting;
-
-      @Bean
-      public MyService myService() {
-          return new MyService(greeting);
-      }
-  }
-				</code></pre>
-        </section>
-
-        <section>
-          <h3>Lataus järjestys</h3>
-
-						<pre>
-						<code>@DependsOn("seppoService")</code>
-						Bean A ennen Bean B, joku siis vaatii seppoServicen toimiakseen
-						</pre>
-
-											<pre>
-						<code>@Primary</code>
-						Yksi oletusimplementaatio, jos useita toteutuksia on, tämä valitaan
-						</pre>
-
-						<pre>
-						<code>@Qualifier</code>
-						Tarkka bean, määrittelee tarkasti käytettävän pavun
-
-						<code>
-  @Autowired
-  @Qualifier("seppoFormatter")
-  private Formatter formatter;
-						</code>
-						</pre>
-
-						<pre>
-						<code>@Lazy</code>
-						Laiska lataus, ladataan kun tarvitaan, voidaan välttää "circular dependencies" -virheitä
-						</pre>
-
-
-        </section>
-
-				<section>
-												<pre>
-						Järjestetty lista beaneja, @Order määrittää järjestyksen
-						<code>
-@Component
-@Order(1)
-class A extends Seppo {
-    public String getName() {
-        return "A";
-    }
-}
-						</code>
-						<code>
-@Component
-@Order(2)
-class B extends Seppo {
-    public String getName() {
-        return "B";
-    }
-}
-						</code>
-						<code>
-@Autowired
-List&lt;Seppo&gt; sepot;
-</code>
-						</pre>
-				</section>
+        <section
+          data-markdown="slides.md"
+          data-separator="^\n---\n$"
+          data-separator-vertical="^\n--\n$"
+          data-separator-notes="^Note:"
+        ></section>
       </div>
     </div>
-
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/plugin/highlight/highlight.js"></script>
+    <script src="js/plugin/markdown/markdown.js"></script>
     <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
-
-        // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        plugins: [RevealHighlight, RevealMarkdown],
       });
     </script>
   </body>
